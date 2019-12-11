@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/linear_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="50dp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/img_commentUserIcon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_commenter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="刘翔"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_commentDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_commenter"
+                    android:text="06-12 12:32"
+                    android:textColor="@color/secondary_text"/>
+
+                <ImageView
+                    android:id="@+id/img_replay"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/icon_replay_commet" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_commentText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="经典款拉回家的来看哈都会看见啊的老KaHJDKLJAHS大神快来DHKJA"
+                android:textSize="14sp" />
+
+            <com.yiqiji.money.modules.book.detailinfo.view.ReplayListView
+                android:id="@+id/replay_thum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#F5F9FC"
+                android:layout_marginTop="6dp"
+                android:padding="6dp">
+
+            </com.yiqiji.money.modules.book.detailinfo.view.ReplayListView>
+        </LinearLayout>
+    </LinearLayout>
+    <View style="@style/dividing_line_style"></View>
+</LinearLayout>

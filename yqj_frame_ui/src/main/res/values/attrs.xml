@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!---MD风格的Loading-->
+    <declare-styleable name="ProgressWheel">
+        <attr name="matProg_progressIndeterminate" format="boolean" />
+        <attr name="matProg_barColor" format="color" />
+        <attr name="matProg_rimColor" format="color" />
+        <attr name="matProg_rimWidth" format="dimension" />
+        <attr name="matProg_spinSpeed" format="float" />
+        <attr name="matProg_barSpinCycleTime" format="integer" />
+        <attr name="matProg_circleRadius" format="dimension" />
+        <attr name="matProg_fillRadius" format="boolean" />
+        <attr name="matProg_barWidth" format="dimension" />
+        <attr name="matProg_linearProgress" format="boolean" />
+    </declare-styleable>
+
+    <!-- 需要异步加载数据的根Layout-->
+    <declare-styleable name="UIBaseLoadingLayout">
+        <attr name="ymtEmptyView" format="reference" />
+        <attr name="ymtLoadingView" format="reference" />
+        <attr name="ymtRetryView" format="reference" />
+        <attr name="ymtContentView" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="IconTextView">
+        <attr name="leftDrawable" format="reference" />
+        <attr name="leftDrawableWidth" format="dimension" />
+        <attr name="leftDrawableHeight" format="dimension" />
+        <attr name="rightDrawable" format="reference" />
+        <attr name="rightDrawableWidth" format="dimension" />
+        <attr name="rightDrawableHeight" format="dimension" />
+        <attr name="topDrawable" format="reference" />
+        <attr name="topDrawableWidth" format="dimension" />
+        <attr name="topDrawableHeight" format="dimension" />
+    </declare-styleable>
+
+
+    <declare-styleable name="RoundedImageView">
+        <attr name="riv_corner_radius" format="dimension" />
+        <attr name="riv_corner_radius_top_left" format="dimension" />
+        <attr name="riv_corner_radius_top_right" format="dimension" />
+        <attr name="riv_corner_radius_bottom_left" format="dimension" />
+        <attr name="riv_corner_radius_bottom_right" format="dimension" />
+        <attr name="riv_border_width" format="dimension" />
+        <attr name="riv_border_color" format="color" />
+        <attr name="riv_mutate_background" format="boolean" />
+        <attr name="riv_auto_scale_image" format="boolean" />
+        <attr name="riv_oval" format="boolean" />
+        <attr name="android:scaleType" />
+        <attr name="riv_tile_mode">
+            <enum name="clamp" value="0" />
+            <enum name="repeat" value="1" />
+            <enum name="mirror" value="2" />
+        </attr>
+        <attr name="riv_tile_mode_x">
+            <enum name="clamp" value="0" />
+            <enum name="repeat" value="1" />
+            <enum name="mirror" value="2" />
+        </attr>
+        <attr name="riv_tile_mode_y">
+            <enum name="clamp" value="0" />
+            <enum name="repeat" value="1" />
+            <enum name="mirror" value="2" />
+        </attr>
+    </declare-styleable>
+
+
+    <declare-styleable name="UnlockView">
+        <!-- 视图的Tint效果颜色-->
+        <attr name="tintColor" format="color" />
+        <!-- 视图的背景色-->
+        <attr name="backgroundColor" format="color" />
+        <!-- 小锁距离视图边界的距离-->
+        <attr name="space" format="dimension" />
+        <!-- 解锁触发阀值-->
+        <attr name="trigger" format="float" />
+        <!-- 动画时长 -->
+        <attr name="animationTimeDuration" format="integer" />
+        <!-- Tint效果动画时长-->
+        <attr name="tintAnimationDuration" format="integer" />
+        <!-- 是否使用Tint效果-->
+        <attr name="tint" format="boolean" />
+    </declare-styleable>
+
+    <!-- 底部滑动指示器的样式-->
+    <declare-styleable name="stl_SmartTabLayout">
+        <attr name="stl_indicatorAlwaysInCenter" format="boolean" />
+        <attr name="stl_indicatorWithoutPadding" format="boolean" />
+        <attr name="stl_indicatorInFront" format="boolean" />
+        <attr name="stl_indicatorInterpolation" format="enum">
+            <enum name="smart" value="0" />
+            <enum name="linear" value="1" />
+        </attr>
+        <attr name="stl_indicatorGravity" format="enum">
+            <enum name="bottom" value="0" />
+            <enum name="top" value="1" />
+            <enum name="center" value="2" />
+        </attr>
+        <attr name="stl_indicatorColor" format="color" />
+        <attr name="stl_indicatorColors" format="reference" />
+        <attr name="stl_indicatorThickness" format="dimension" />
+        <attr name="stl_indicatorWidth" format="dimension">
+            <enum name="auto" value="-1" />
+        </attr>
+        <attr name="stl_indicatorCornerRadius" format="dimension" />
+        <attr name="stl_overlineColor" format="color" />
+        <attr name="stl_overlineThickness" format="dimension" />
+        <attr name="stl_underlineColor" format="color" />
+        <attr name="stl_underlineThickness" format="dimension" />
+        <attr name="stl_dividerColor" format="color" />
+        <attr name="stl_dividerColors" format="reference" />
+        <attr name="stl_dividerThickness" format="dimension" />
+        <attr name="stl_defaultTabBackground" format="reference" />
+        <attr name="stl_defaultTabTextAllCaps" format="boolean" />
+        <attr name="stl_defaultTabTextColor" format="color|reference" />
+        <attr name="stl_defaultTabTextSize" format="dimension" />
+        <attr name="stl_defaultTabTextHorizontalPadding" format="dimension" />
+        <attr name="stl_defaultTabTextMinWidth" format="dimension" />
+        <attr name="stl_customTabTextLayoutId" format="reference" />
+        <attr name="stl_customTabTextViewId" format="reference" />
+        <attr name="stl_distributeEvenly" format="boolean" />
+        <attr name="stl_clickable" format="boolean" />
+        <attr name="stl_titleOffset" format="dimension">
+            <enum name="auto_center" value="-1" />
+        </attr>
+        <attr name="stl_drawDecorationAfterTab" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="base_title_layout_styeable_ui">
+        <attr name="base_title_color_ui" format="color"></attr>
+        <attr name="base_title_size_ui" format="dimension"></attr>
+        <attr name="base_title_left_return_ui" format="reference|integer"></attr>
+        <attr name="base_title_left_return_ui_visible" format="boolean"></attr>
+        <attr name="base_title_right_image_ui" format="reference|integer"></attr>
+        <attr name="base_title_right_image_ui_visible" format="boolean"></attr>
+        <attr name="base_title_right_second_image_ui" format="reference|integer"></attr>
+        <attr name="base_title_right_second_image_ui_visible" format="boolean"></attr>
+        <attr name="base_title_right_text_color" format="color"></attr>
+        <attr name="base_title_right_text_visible" format="boolean"></attr>
+        <attr name="base_title_right_text_size" format="dimension"></attr>
+    </declare-styleable>
+</resources>

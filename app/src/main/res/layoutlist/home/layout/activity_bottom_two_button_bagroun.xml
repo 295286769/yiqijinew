@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/myid_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_left_15"
+        android:layout_marginRight="@dimen/margin_left_15"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/margin_left_20"
+        android:paddingTop="@dimen/margin_left_10">
+
+        <TextView
+            android:id="@+id/share_button"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/button_height"
+            android:layout_marginRight="@dimen/pingding_8"
+            android:layout_weight="1"
+            android:background="@drawable/edit_book_return"
+            android:gravity="center"
+            android:text="添加成员"
+            android:textColor="@color/white"
+            android:textSize="@dimen/context_text" />
+
+        <TextView
+            android:id="@+id/settlement_button"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/button_height"
+            android:layout_marginLeft="@dimen/pingding_8"
+            android:layout_weight="1"
+            android:background="@drawable/edit_book_return"
+            android:gravity="center"
+            android:text="完成结算"
+            android:textColor="@color/white"
+            android:textSize="@dimen/context_text" />
+    </LinearLayout>
+</RelativeLayout>

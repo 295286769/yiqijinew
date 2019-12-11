@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/button_height"
+        android:background="@drawable/list_note_bagroud"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/margin_left_15"
+        android:paddingRight="@dimen/margin_left_15">
+
+        <ImageView
+            android:id="@+id/notes_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_left_15"
+            android:src="@drawable/settlement_picture" />
+
+        <TextView
+            android:id="@+id/textview_content"
+            style="@style/title_list_item"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/notes_image"
+            android:text="我要结算" />
+
+        <TextView
+            android:id="@+id/message_note_text"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_marginRight="@dimen/margin_left_10"
+            android:layout_marginTop="8dp"
+            android:layout_toLeftOf="@+id/textview_content"
+            android:background="@drawable/note_messae_bagroud"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_8"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <include layout="@layout/item_split_line_margin" />
+</LinearLayout>

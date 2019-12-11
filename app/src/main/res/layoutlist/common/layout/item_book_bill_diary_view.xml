@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="5dp"
+    android:paddingLeft="@dimen/margin_left_15"
+    android:paddingRight="@dimen/margin_left_15"
+    android:paddingTop="5dp">
+
+    <RelativeLayout
+        android:id="@+id/relayout_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_selecter_white_darkwhite"
+        android:descendantFocusability="afterDescendants"
+        android:gravity="center_vertical"
+        android:minHeight="20dp">
+
+        <TextView
+            android:id="@+id/journal_text"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/tv_billDiaryText"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/journal_bagroud"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="日志"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_11" />
+
+        <TextView
+            android:id="@+id/tv_billDiaryText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/journal_text"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="dasdasdasdasdasdasdasdasdasdsaddhaskjldhkja"
+            android:textColor="@color/secondary_text"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:descendantFocusability="afterDescendants"
+        android:gravity="top"
+        android:paddingRight="@dimen/margin_left_15">
+
+        <View
+            android:id="@+id/view_placeholder"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="@dimen/pingding_5"
+            android:src="@drawable/icon_106" />
+
+        <TextView
+            android:id="@+id/tv_billDiaryCreater"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="@dimen/margin_left_5"
+            android:layout_toRightOf="@+id/view_placeholder"
+            android:text="辛晓龙"
+            android:textColor="#d3d3d3"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/stage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="1dp"
+            android:layout_toRightOf="@+id/tv_billDiaryCreater"
+            android:background="@drawable/activity_bill_item_graybagroun"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="11sp"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/location_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/stage"
+            android:scaleType="centerInside"
+            android:src="@drawable/locationimage" />
+
+        <TextView
+            android:id="@+id/location_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/location_image"
+            android:ellipsize="end"
+            android:paddingLeft="2dp"
+            android:singleLine="true"
+            android:text="张江高科"
+            android:textColor="#d3d3d3"
+            android:textSize="11sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rela_billImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_selecter_white_darkwhite"
+        android:descendantFocusability="afterDescendants"
+        android:gravity="center_vertical"
+        android:paddingRight="@dimen/margin_left_15">
+
+        <View
+            android:id="@+id/view_placeholder2"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="@dimen/pingding_5"
+            android:src="@drawable/icon_106" />
+
+        <com.yiqiji.money.modules.common.view.SelectableRoundedImageView
+            android:id="@+id/bill_image"
+            android:layout_width="120dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/view_placeholder2"
+            android:scaleType="centerCrop"
+            app:sriv_left_bottom_corner_radius="5dp"
+            app:sriv_left_top_corner_radius="5dp"
+            app:sriv_right_bottom_corner_radius="5dp"
+            app:sriv_right_top_corner_radius="5dp" />
+
+
+    </RelativeLayout>
+
+    <View
+        style="@style/dividing_line_style"
+        android:layout_marginTop="4dp"></View>
+
+</LinearLayout>

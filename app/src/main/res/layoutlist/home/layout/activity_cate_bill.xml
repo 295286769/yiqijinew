@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/activity_title_layout" />
+
+    <include layout="@layout/item_split_line" />
+
+    <include
+        android:id="@+id/not_data"
+        layout="@layout/note_data_base"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="0.5dp"
+        android:visibility="invisible" />
+
+    <com.yiqiji.money.modules.common.widget.BaseRecylerview
+        android:id="@+id/bill_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fadingEdge="none"
+        android:overScrollMode="never"
+        android:scrollbars="none" />
+
+
+</LinearLayout>

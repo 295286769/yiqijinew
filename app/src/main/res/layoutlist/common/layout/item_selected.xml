@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/module_line"
+    android:paddingBottom="4dp"
+    android:paddingTop="4dp">
+
+    <LinearLayout
+        android:id="@+id/ll_item_select"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="@dimen/margin_left_15"
+        android:layout_marginRight="@dimen/margin_left_15"
+        android:layout_toLeftOf="@+id/tv_cancel"
+        android:background="@drawable/activity_search_bg_stock"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/icon_search" />
+
+        <TextView
+            android:id="@+id/tv_item_select"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:background="@null"
+            android:hint="搜索附近位置"
+            android:inputType="text"
+            android:paddingBottom="7dp"
+            android:paddingLeft="2dp"
+            android:paddingTop="7dp"
+            android:singleLine="true"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</RelativeLayout>

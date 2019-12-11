@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <AbsoluteLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <com.yiqiji.money.modules.common.view.TriangleView
+            android:id="@+id/triangle_view"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            />
+    </AbsoluteLayout>
+
+    <com.yiqiji.money.modules.book.bookcategory.view.PopWindowContentView
+        android:id="@+id/ll_content"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/list_note_bagroud">
+    </com.yiqiji.money.modules.book.bookcategory.view.PopWindowContentView>
+
+    <AbsoluteLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <com.yiqiji.money.modules.common.view.ReverseTriangleView
+            android:id="@+id/reverse_triangle_view"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:visibility="gone"
+            />
+    </AbsoluteLayout>
+</LinearLayout>

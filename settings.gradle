@@ -1,0 +1,25 @@
+include ':app',
+        ':yqj_frame_ui',
+        ':yqj_frame_core',
+        ':yqj_plug_pullrefresh',
+        ':yqj_plug_pullzoomview',
+        ':yqj_plug_wheel',
+        ':yqj_plug_bgabanner',
+        ':yqj_plug_recycleview_base_adapter',
+        ':yiqiji_imageloadermaniger',
+        ':yqj_plug_speechrecognizer',
+        'yiqiji_imagezoomdemo', 'yqj_citypicker'
+
+
+project(':yqj_plug_pullrefresh').projectDir = new File('library/yqj_plug_pullrefresh')
+project(':yqj_plug_pullzoomview').projectDir = new File('library/yqj_plug_pullzoomview')
+project(':yqj_plug_wheel').projectDir = new File('library/yqj_plug_wheel')
+project(':yqj_plug_bgabanner').projectDir = new File('library/yqj_plug_bgabanner')
+project(':yqj_plug_recycleview_base_adapter').projectDir = new File('library/yqj_plug_recycleview_base_adapter')
+project(':yiqiji_imageloadermaniger').projectDir = new File('library/yiqiji_imageloadermaniger')
+project(':yqj_plug_speechrecognizer').projectDir = new File('library/yqj_plug_speechrecognizer')
+project(':yiqiji_imagezoomdemo').projectDir = new File('library/yiqiji_imagezoomdemo')
+project(':yqj_citypicker').projectDir = new File('library/yqj_citypicker')
+
+
+

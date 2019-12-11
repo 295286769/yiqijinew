@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/module_line"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/activity_title_layout" />
+
+    <include layout="@layout/item_split_line" />
+
+    <RelativeLayout
+        android:id="@+id/group_settlement"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/settlement_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_left_15"
+            android:scaleType="centerCrop"
+            android:src="@drawable/group_settlement" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_left_10"
+            android:layout_toRightOf="@+id/settlement_image">
+
+            <TextView
+                android:id="@+id/name"
+                style="@style/user_name_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:text="全员结算"
+                android:textColor="@color/context_color" />
+
+            <TextView
+                android:id="@+id/context"
+                style="@style/text_gray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/name"
+                android:layout_below="@+id/name"
+                android:paddingBottom="10dp"
+                android:text="结清群组内所有人的账单" />
+
+            <ImageView
+                android:layout_width="@dimen/list_item_right_image_height"
+                android:layout_height="@dimen/list_item_right_image_height"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/margin_left_15"
+                android:src="@drawable/arrow" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+    <include layout="@layout/item_split_line_margin" />
+
+    <RelativeLayout
+        android:id="@+id/singe_settlement"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/singe_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_left_15"
+            android:scaleType="centerCrop"
+            android:src="@drawable/singe_settlement" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_left_10"
+            android:layout_toRightOf="@+id/singe_image">
+
+            <TextView
+                android:id="@+id/name_singe"
+                style="@style/user_name_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="个人结算"
+                android:textColor="@color/context_color" />
+
+            <TextView
+                android:id="@+id/context_signe"
+                style="@style/text_gray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/name_singe"
+                android:layout_below="@+id/name_singe"
+                android:paddingBottom="10dp"
+                android:text="结清自己的账单" />
+
+            <ImageView
+                android:layout_width="@dimen/list_item_right_image_height"
+                android:layout_height="@dimen/list_item_right_image_height"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/margin_left_15"
+                android:src="@drawable/arrow" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

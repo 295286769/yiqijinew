@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/ll_linear"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical" >
+
+        <com.yiqiji.money.modules.common.view.RefreshableView
+            android:id="@+id/refreshableView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" >
+
+            <com.yiqiji.money.view.MyRecyclerView
+                android:id="@+id/rl_item_ac_main"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:overScrollMode="never"
+                android:scrollbars="vertical" >
+            </com.yiqiji.money.view.MyRecyclerView>
+        </com.yiqiji.money.modules.common.view.RefreshableView>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginTop="-2dp"
+        android:contentDescription="@null"
+        android:src="@drawable/reel" />
+
+</RelativeLayout>

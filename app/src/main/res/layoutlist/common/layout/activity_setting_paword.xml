@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/activity_title_layout" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height"
+        android:background="@color/white">
+
+        <EditText
+            android:id="@+id/ed_new_pwd_ac_retrieve_pwd"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_left_15"
+            android:layout_marginRight="@dimen/margin_left_15"
+            android:background="@null"
+            android:hint="请输入密码"
+            android:inputType="textPassword"
+            android:cursorVisible="false"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:textColor="@color/context_color"
+            android:textSize="@dimen/context_text" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/ll_login_username"
+        android:layout_marginLeft="@dimen/margin_left_15"
+        android:layout_marginRight="@dimen/margin_left_15"
+        android:background="@color/split_line"></View>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height"
+        android:background="@color/white">
+
+        <EditText
+            android:id="@+id/ed_comfirm_pwd_ac_retrieve_pwd"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_left_15"
+            android:layout_marginRight="@dimen/margin_left_15"
+            android:background="@null"
+            android:hint="请确认新密码"
+            android:inputType="textPassword"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:textColor="@color/context_color"
+            android:textSize="@dimen/context_text" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/ll_login_username"
+        android:layout_marginLeft="@dimen/margin_left_15"
+        android:layout_marginRight="@dimen/margin_left_15"
+        android:background="@color/split_line"></View>
+
+    <Button
+        android:id="@+id/btn_setting_paword_retrieve_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="@dimen/margin_left_15"
+        android:layout_marginRight="@dimen/margin_left_15"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/send_out_message"
+        android:text="重置密码"
+        android:textColor="@color/white"
+        android:textSize="@dimen/context_text" />
+
+</LinearLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/margin_left_20"
+    android:paddingLeft="@dimen/margin_left_20"
+    android:paddingRight="@dimen/margin_left_20"
+    android:paddingTop="@dimen/margin_left_20">
+
+    <LinearLayout
+        android:id="@+id/bedug_renovation_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_vertical|left"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/bedug_renovation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/pingding_5"
+            android:text="@string/bedug_renovation"
+            android:textColor="@color/home_text_color"
+            android:textSize="@dimen/text_16" />
+
+        <TextView
+            android:id="@+id/renovation_bedug_balance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="0.00"
+            android:textColor="@color/home_text_color"
+            android:textSize="@dimen/text_16" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/expese_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_vertical|right"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/accumulated_expenditure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/pingding_5"
+            android:text="@string/accumulated_expenditure"
+            android:textColor="@color/home_text_color"
+            android:textSize="@dimen/text_16" />
+
+        <TextView
+            android:id="@+id/accumulated_expenditure_balance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="0.00"
+            android:textColor="@color/home_text_color"
+            android:textSize="@dimen/text_16" />
+
+    </LinearLayout>
+
+</LinearLayout>

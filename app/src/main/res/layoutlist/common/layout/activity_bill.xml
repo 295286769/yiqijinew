@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/activity_title_layout" />
+
+    <include layout="@layout/item_split_line" />
+
+    <LinearLayout
+        android:id="@+id/ll_radiogroup"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/titlebar_height"
+        android:background="@color/main_back"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <RadioGroup
+            android:id="@+id/radio_group_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/expenditure_income_button_back_ground"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb_details_expenditure"
+                android:layout_width="80dp"
+                android:layout_height="25dp"
+                android:background="@drawable/expenditure_income_button_select"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:text="支出"
+                android:textColor="@color/expenses_incom_button_text_color" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="10dp"
+                android:background="@color/expenditure_income_button_color"></View>
+
+            <RadioButton
+                android:id="@+id/rb_details_income"
+                android:layout_width="80dp"
+                android:layout_height="25dp"
+                android:background="@drawable/income_select_middle"
+                android:button="@null"
+                android:gravity="center"
+                android:text="收入"
+                android:textColor="@color/expenses_incom_button_text_color" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <com.yiqiji.money.modules.common.widget.myviewpager.TabPageIndicator
+            android:id="@+id/tabPageIndicator"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/list_item_height_46"
+            android:background="@color/white"
+            android:visibility="visible" />
+
+        <include layout="@layout/item_split_line_margin_pesent_three" />
+
+        <com.yiqiji.money.modules.common.widget.myviewpager.NoScrollViewPager
+            android:id="@+id/pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_color" />
+
+</LinearLayout>

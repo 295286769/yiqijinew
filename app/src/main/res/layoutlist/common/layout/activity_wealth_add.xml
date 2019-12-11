@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--标题-->
+    <include layout="@layout/include_common_head"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RadioGroup
+            android:id="@+id/radio_group_wealth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/wealth_button_back_ground"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb_wealth_add_capital"
+                android:layout_width="80dp"
+                android:layout_height="25dp"
+                android:background="@drawable/wealth_readio_left"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:text="资金账户"
+                android:textColor="@drawable/wealth_readio_text_color" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/main_back" />
+
+            <RadioButton
+                android:id="@+id/rb_wealth_add_investment"
+                android:layout_width="80dp"
+                android:layout_height="25dp"
+                android:background="@drawable/wealth_readio_middle"
+                android:button="@null"
+                android:gravity="center"
+                android:text="投资理财"
+                android:textColor="@drawable/wealth_readio_text_color" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/main_back" />
+
+            <RadioButton
+                android:id="@+id/rb_wealth_add_receivables"
+                android:layout_width="80dp"
+                android:layout_height="25dp"
+                android:background="@drawable/wealth_readio_right"
+                android:button="@null"
+                android:gravity="center"
+                android:text="应收/付款"
+                android:textColor="@drawable/wealth_readio_text_color" />
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null"
+        android:listSelector="@android:color/transparent"
+        android:scrollbars="none"
+        android:background="@color/white"/>
+
+</LinearLayout>

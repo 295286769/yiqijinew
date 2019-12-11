@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_selecter_white_darkwhite"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp">
+
+        <ImageView
+            android:id="@+id/iv_photo"
+            android:layout_width="45dp"
+            android:layout_height="45dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/iv_photo"
+            android:orientation="vertical"
+            android:paddingLeft="10dp">
+
+            <TextView
+                android:id="@+id/tv_usrName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:paddingTop="4dp"
+                android:singleLine="true"
+                android:text="大白菜"
+                android:textColor="@color/title_color"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:paddingTop="4dp"
+                android:singleLine="true"
+                android:text="2017-3-29"
+                android:textColor="@color/secondary_text"
+                android:textSize="12sp" />
+
+
+            <TextView
+                android:id="@+id/tv_commentContent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="3"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text=""
+                android:textColor="#666666"
+                android:textSize="15sp" />
+
+            <View
+                android:id="@+id/v_devider"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/split_line"
+                android:paddingLeft="10dp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>

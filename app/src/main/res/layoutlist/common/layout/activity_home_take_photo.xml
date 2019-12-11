@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/activity_home_take_photo_bagroud"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/take_photo"
+            style="@style/take_photo_text"
+            android:text="@string/home_take_photo" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="@color/background_color" >
+        </View>
+
+        <TextView
+            android:id="@+id/photo_ablum"
+            style="@style/take_photo_text"
+            android:text="@string/home_from_ablum" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/cannel"
+        style="@style/take_photo_text"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/activity_home_take_photo_bagroud"
+        android:text="@string/home_cannel" />
+
+</LinearLayout>

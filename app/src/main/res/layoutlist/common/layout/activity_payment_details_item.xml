@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/layout_para"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/sign_one_item_height"
+            android:background="@drawable/bg_selecter_white_darkwhite"
+            android:paddingLeft="@dimen/margin_left_15"
+            android:paddingRight="@dimen/margin_left_15">
+
+            <com.yiqiji.money.modules.common.view.UserHeadImageView
+                android:id="@+id/head_image"
+                android:layout_width="@dimen/image_head_height_30"
+                android:layout_height="@dimen/image_head_height_30"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/margin_left_10"
+                android:scaleType="centerCrop" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/margin_left_10"
+                android:layout_toLeftOf="@+id/text"
+                android:layout_toRightOf="@+id/head_image"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/user_name"
+                    style="@style/user_name_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="rert " />
+
+                <TextView
+                    android:id="@+id/total_balace"
+                    style="@style/text_gray"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/pingding_5"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text=""
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/balane"
+                style="@style/user_name_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="0.00" />
+
+            <TextView
+                android:id="@+id/text"
+                style="@style/text_gray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/margin_left_10"
+                android:layout_toLeftOf="@+id/balane"
+                android:text="支付" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <include layout="@layout/item_split_line_pesent_three" />
+
+</LinearLayout>

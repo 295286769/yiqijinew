@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/member_id"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.yiqiji.money.modules.common.view.UserHeadImageView
+        android:id="@+id/head_view"
+        android:layout_width="43dp"
+        android:layout_height="43dp"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/mine_text"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignBottom="@+id/head_view"
+        android:layout_alignRight="@+id/head_view"
+        android:background="@drawable/drawble_mine_circle"
+        android:gravity="center"
+        android:text="我"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_12"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/head_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/head_view"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text="黄尚"
+        android:textColor="@color/home_text_color"
+        android:textSize="@dimen/text_12" />
+
+</RelativeLayout>

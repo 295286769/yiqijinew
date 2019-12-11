@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        style="@style/discover_item_book_rootstyle"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_title_content"
+            style="@style/discover_item_book_titletyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/margin_left_15"
+            android:text="dfd" />
+
+        <TextView
+            android:id="@+id/tv_content"
+            style="@style/text_gray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/margin_left_10"
+            android:paddingLeft="5dp"
+            android:text="fdfd" />
+
+        <com.yiqiji.money.modules.community.view.ReadSubscriptionReviewsView
+            android:id="@+id/readSubscriptionReviewsView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp" />
+
+        <include layout="@layout/item_split_line" />
+    </LinearLayout>
+</merge>
+
+

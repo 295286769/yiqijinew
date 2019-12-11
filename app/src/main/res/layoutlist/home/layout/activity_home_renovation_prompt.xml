@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/book_warn_baground"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/prompt_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:paddingBottom="@dimen/pingding_5"
+        android:paddingLeft="@dimen/margin_left_10"
+        android:paddingRight="@dimen/pingding_5"
+        android:paddingTop="@dimen/pingding_5"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_13" />
+</LinearLayout>

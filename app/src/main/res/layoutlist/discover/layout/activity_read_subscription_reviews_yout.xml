@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+
+    >
+    <LinearLayout
+        android:id="@+id/read_subscription_reviews_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/margin_left_15"
+        android:paddingTop="@dimen/margin_left_15">
+
+        <TextView
+            style="@style/read_subscription_reviews_style"
+            android:paddingRight="@dimen/margin_left_10"
+            android:text="@string/discover_read_text" />
+
+        <TextView
+            android:id="@+id/tv_read_number"
+            style="@style/read_subscription_reviews_style"
+            android:paddingRight="@dimen/margin_left_20" />
+
+        <TextView
+            style="@style/read_subscription_reviews_style"
+            android:paddingRight="@dimen/margin_left_10"
+            android:text="@string/discover_subscription_text" />
+
+        <TextView
+            android:id="@+id/tv_subscription_number"
+            style="@style/read_subscription_reviews_style"
+            android:paddingRight="@dimen/margin_left_20" />
+
+        <TextView
+            style="@style/read_subscription_reviews_style"
+            android:paddingRight="@dimen/margin_left_10"
+            android:text="@string/discover_reviews_text" />
+
+        <TextView
+            android:id="@+id/tv_reviews_number"
+            style="@style/read_subscription_reviews_style"
+            android:paddingRight="@dimen/margin_left_20" />
+    </LinearLayout>
+
+</merge>

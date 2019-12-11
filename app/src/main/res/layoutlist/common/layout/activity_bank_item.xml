@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_letter"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="#F4F4F4"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/margin_left_15"
+        android:text="A"
+        android:textSize="@dimen/context_text" />
+
+    <RelativeLayout
+        android:id="@+id/rl_bankName"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@drawable/bg_selecter_white_darkwhite"
+        android:paddingLeft="@dimen/margin_left_15"
+        android:paddingRight="10dp">
+
+        <ImageView
+            android:id="@+id/ban_icon"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/tv_bankName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/ban_icon"
+            android:paddingLeft="10dp"
+            android:text="工商银行"
+            android:textColor="@color/context_color"
+            android:textSize="@dimen/context_text" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

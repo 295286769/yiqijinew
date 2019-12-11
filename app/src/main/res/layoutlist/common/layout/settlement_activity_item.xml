@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_selecter_white_darkwhite"
+        android:padding="@dimen/margin_left_10">
+
+        <com.yiqiji.money.modules.common.view.CircleImageView
+            android:id="@+id/head_image"
+            android:layout_width="@dimen/image_head_height_30"
+            android:layout_height="@dimen/image_head_height_30"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/pay_member"
+            style="@style/name_maxLength"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="@dimen/pingding_5"
+            android:layout_toLeftOf="@+id/layout"
+            android:layout_toRightOf="@+id/head_image"
+            android:text="huangw"
+            android:textColor="@color/context_color"
+            android:textSize="@dimen/context_text" />
+
+        <LinearLayout
+            android:id="@+id/layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/pay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="应向"
+                android:textColor="@color/secondary_text"
+                android:textSize="@dimen/text_13" />
+
+            <TextView
+                android:id="@+id/collect_member"
+                style="@style/name_maxLength"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="huangsssssss"
+                android:textColor="@color/context_color"
+                android:textSize="@dimen/context_text" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/pay_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/collect_balance"
+            android:text="支付"
+            android:textColor="@color/orangered"
+            android:textSize="@dimen/text_13" />
+
+        <TextView
+            android:id="@+id/collect_balance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_left_10"
+            android:text="500.00"
+            android:textColor="@color/context_color"
+            android:textSize="@dimen/context_text" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/background_color" />
+
+</LinearLayout>

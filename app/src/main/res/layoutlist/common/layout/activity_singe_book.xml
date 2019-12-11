@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/layout_color"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/fl_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/radiogroup_height" />
+
+        <include
+            layout="@layout/activity_title_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true" />
+
+        <include
+            android:id="@+id/unlogin_prompt_include"
+            layout="@layout/unlogin_prompt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/radiogroup_main" />
+
+        <View
+            android:id="@+id/view_sing_book"
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"
+            android:layout_above="@+id/radiogroup_main"
+            android:background="#B9B8AF" />
+
+        <RadioGroup
+            android:id="@+id/radiogroup_main"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/radiogroup_height"
+            android:layout_alignParentBottom="true"
+            android:background="@color/title_back_color"
+            android:orientation="horizontal"
+            android:paddingTop="2dp">
+
+            <RadioButton
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableTop="@drawable/sign_one_select_button"
+                android:gravity="center"
+                android:text="记账"
+                android:textColor="@color/book_select_button_color"
+                android:textSize="12sp" />
+
+            <RadioButton
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableTop="@drawable/wealth_select_button"
+                android:gravity="center"
+                android:text="资产"
+                android:textColor="@color/book_select_button_color"
+                android:textSize="12sp"
+                android:visibility="visible" />
+
+            <RadioButton
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableTop="@drawable/find_select_button"
+                android:gravity="center"
+                android:text="发现"
+                android:textColor="@color/book_select_button_color"
+                android:textSize="12sp" />
+
+            <RadioButton
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableTop="@drawable/min_select_button"
+                android:gravity="center"
+                android:text="我的"
+                android:textColor="@color/book_select_button_color"
+                android:textSize="12sp" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/longding"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/radiogroup_main"
+            android:layout_marginTop="@dimen/layout_piding"
+            android:background="@color/background_color"
+            android:gravity="center"
+            android:text="加载中..."
+            android:textColor="@color/secondary_text"
+            android:textSize="@dimen/context_text"
+            android:visibility="visible" />
+
+        <include layout="@layout/activity_bill_add_show" />
+    </RelativeLayout>
+
+
+</LinearLayout>

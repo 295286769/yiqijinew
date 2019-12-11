@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_gone_keyboard_many_people"
+        android:layout_width="match_parent"
+        android:layout_height="23dp"
+        android:background="#cceaeaea"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/write_down"></ImageView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_keyboard_one"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/keyboard_height"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/keyboard_item_baground"
+                android:gravity="center"
+                android:text="1"
+                android:textColor="@color/keybord_text"
+                android:textSize="@dimen/text_24"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_keyboard_four"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/keyboard_height"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/keyboard_item_baground"
+                android:gravity="center"
+                android:text="4"
+                android:textColor="@color/keybord_text"
+                android:textSize="@dimen/text_24"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_keyboard_seven"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/keyboard_height"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/keyboard_item_baground"
+                android:gravity="center"
+                android:text="7"
+                android:textColor="@color/keybord_text"
+                android:textSize="@dimen/text_24"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_keyboard_zero"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/keyboard_height"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/keyboard_item_baground"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="@color/keybord_text"
+                android:textSize="@dimen/text_24"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_keyboard_tow"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/keyboard_height"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/keyboard_item_baground"
+                android:gravity="center"
+                android:text="2"
+                android:textColor="@color/keybord_text"
+                android:textSize="@dimen/text_24"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_keyboard_five"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/keyboard_height"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/keyboard_item_baground"
+                android:gravity="center"
+                android:text="5"
+                android:textColor="@color/keybord_text"
+                android:textSize="@dimen/text_24"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_keyboard_eight"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/keyboard_height"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/keyboard_item_baground"
+                android:gravity="center"
+                android:text="8"
+                android:textColor="@color/keybord_text"
+                android:textSize="@dimen/text_24"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_keyboard_zero2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/keyboard_height"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/keyboard_item_baground"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/keybord_text"
+                android:textSize="@dimen/text_24"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_keyboard_three"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/keyboard_height"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/keyboard_item_baground"
+                android:gravity="center"
+                android:text="3"
+                android:textColor="@color/keybord_text"
+                android:textSize="@dimen/text_24"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_keyboard_sex"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/keyboard_height"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/keyboard_item_baground"
+                android:gravity="center"
+                android:text="6"
+                android:textColor="@color/keybord_text"
+                android:textSize="@dimen/text_24"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_keyboard_nine"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/keyboard_height"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/keyboard_item_baground"
+                android:gravity="center"
+                android:text="9"
+                android:textColor="@color/keybord_text"
+                android:textSize="@dimen/text_24"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_keyboard_spot"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/keyboard_height"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/keyboard_item_baground"
+                android:gravity="center"
+                android:text="."
+                android:textColor="@color/keybord_text"
+                android:textSize="@dimen/text_24"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_keyboard_delete"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/keyboard_height"
+                android:background="@drawable/keyboard_item_baground"
+                android:gravity="center"
+                android:scaleType="center"
+                android:src="@drawable/remove_edittext_data"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/iv_keyboard_plus"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/keyboard_height"
+                android:background="@drawable/keyboard_item_baground"
+                android:gravity="center"
+                android:scaleType="center"
+                android:src="@drawable/plus" />
+
+            <ImageView
+                android:id="@+id/quit_save"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/keyboard_height"
+                android:background="@drawable/keyboard_item_baground"
+                android:gravity="center"
+                android:scaleType="center"
+                android:src="@drawable/add_again" />
+
+            <TextView
+                android:id="@+id/tv_keyboard_complete"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/keyboard_height"
+                android:background="@drawable/keyboard_item_save"
+                android:gravity="center"
+                android:text="保存"
+                android:textColor="@color/keybord_text"
+                android:textSize="@dimen/context_text"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_keyboard_equal"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/keyboard_height_double"
+                android:background="@drawable/keyboard_item_save"
+                android:gravity="center"
+                android:scaleType="center"
+                android:text="="
+                android:textColor="@color/keybord_text"
+                android:textSize="@dimen/text_28"
+                android:textStyle="bold"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

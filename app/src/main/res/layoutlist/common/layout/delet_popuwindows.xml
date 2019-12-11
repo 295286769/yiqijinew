@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background_color"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height"
+        android:background="@color/white" >
+
+        <TextView
+            style="@style/user_name_text"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/button_height"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="请选择删除原因" />
+
+        <ImageView
+            android:id="@+id/delet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="@dimen/margin_left_10"
+            android:paddingRight="@dimen/margin_left_10"
+            android:src="@drawable/blank_arrow" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/hasign"
+        style="@style/user_name_text"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height"
+        android:layout_marginTop="0.5dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:text="有人记过了" />
+
+    <TextView
+        android:id="@+id/sign_rong"
+        style="@style/user_name_text"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height"
+        android:layout_marginTop="0.5dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:text="这笔记错了" />
+
+    <TextView
+        android:id="@+id/other_reson"
+        style="@style/user_name_text"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height"
+        android:layout_marginTop="0.5dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:text="其他原因" />
+
+</LinearLayout>

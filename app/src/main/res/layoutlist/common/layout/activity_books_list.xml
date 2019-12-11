@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/activity_title_layout" />
+
+    <include layout="@layout/item_split_line" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/my_title">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="15dp"
+                android:paddingTop="8dp">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/margin_left_15"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/noaabook" />
+
+                <TextView
+                    android:id="@+id/book_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_vertical"
+                    android:text="账本"
+                    android:textColor="@color/context_color"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/book_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center_vertical"
+                    android:text="支持单人记或多人共同记账"
+                    android:textColor="@color/secondary_text"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+
+            <com.yiqiji.money.modules.common.widget.MyViewGroup
+                android:id="@+id/many_books_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></com.yiqiji.money.modules.common.widget.MyViewGroup>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="15dp"
+                android:paddingTop="8dp">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/margin_left_15"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/aabook" />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center_vertical"
+                    android:text="AA账本"
+                    android:textColor="@color/context_color"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center_vertical"
+                    android:text="好友之间结算，不再有糊涂账"
+                    android:textColor="@color/secondary_text"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+
+            <com.yiqiji.money.modules.common.widget.MyViewGroup
+                android:id="@+id/single_books_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp">
+
+            </com.yiqiji.money.modules.common.widget.MyViewGroup>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

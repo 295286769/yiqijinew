@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <!--标题-->
+    <include layout="@layout/include_common_head" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/margin_left_15"
+        android:paddingRight="@dimen/margin_left_15">
+
+        <TextView
+            android:id="@+id/tv_project"
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:text="项目名称"
+            android:textColor="@color/context_color"
+            android:textSize="@dimen/context_text" />
+
+        <EditText
+            android:id="@+id/et_project"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="请输入项目名称"
+            android:singleLine="true"
+            android:textColor="@color/context_color"
+            android:textSize="@dimen/secondary_text_size" />
+    </LinearLayout>
+
+
+    <include layout="@layout/item_split_line_margin" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/margin_left_15"
+        android:paddingRight="@dimen/margin_left_15">
+
+        <TextView
+            android:id="@+id/tv_capital"
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:text="本金"
+            android:textColor="@color/context_color"
+            android:textSize="@dimen/context_text" />
+
+        <EditText
+            android:id="@+id/et_capital"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="0.00(可选)"
+            android:inputType="numberDecimal"
+            android:maxLength="12"
+            android:textColor="@color/context_color"
+            android:textSize="@dimen/secondary_text_size" />
+    </LinearLayout>
+
+    <include layout="@layout/item_split_line_margin" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:paddingLeft="@dimen/margin_left_15"
+        android:paddingRight="@dimen/margin_left_15">
+
+        <TextView
+            android:id="@+id/tv_benifit"
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="年化收益率"
+            android:textColor="@color/context_color"
+            android:textSize="@dimen/context_text" />
+
+        <TextView
+            android:id="@+id/tv_degree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="%"
+            android:textColor="@color/main_back"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/et_yearbenifit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/tv_degree"
+            android:layout_toRightOf="@+id/tv_benifit"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="0.00(可选)"
+            android:inputType="numberDecimal"
+            android:maxLength="8"
+            android:textColor="@color/context_color"
+            android:textSize="@dimen/secondary_text_size" />
+    </RelativeLayout>
+
+    <include layout="@layout/item_split_line_margin" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:paddingLeft="@dimen/margin_left_15"
+        android:paddingRight="@dimen/margin_left_15">
+
+        <TextView
+            android:id="@+id/tv_limit"
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="期限"
+            android:textColor="@color/context_color"
+            android:textSize="@dimen/context_text" />
+
+        <RadioGroup
+            android:id="@+id/radio_group_wealth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/wealth_button_back_ground"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb_day"
+                android:layout_width="40dp"
+                android:layout_height="25dp"
+                android:background="@drawable/wealth_readio_left"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:text="日"
+                android:textColor="@drawable/wealth_readio_text_color" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/main_back" />
+
+            <RadioButton
+                android:id="@+id/rb_month"
+                android:layout_width="40dp"
+                android:layout_height="25dp"
+                android:background="@drawable/wealth_readio_right"
+                android:button="@null"
+                android:gravity="center"
+                android:text="月"
+                android:textColor="@drawable/wealth_readio_text_color" />
+
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/et_limit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/radio_group_wealth"
+            android:layout_toRightOf="@+id/tv_limit"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="0"
+            android:inputType="number"
+            android:maxLength="6"
+            android:textColor="@color/context_color"
+            android:textSize="@dimen/secondary_text_size" />
+    </RelativeLayout>
+
+    <include layout="@layout/item_split_line_margin" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/margin_left_15"
+        android:paddingRight="@dimen/margin_left_15">
+
+        <TextView
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:text="起息日期"
+            android:textColor="@color/context_color"
+            android:textSize="@dimen/context_text" />
+
+        <TextView
+            android:id="@+id/tv_startData"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:textColor="@color/context_color"
+            android:textSize="@dimen/secondary_text_size" />
+    </LinearLayout>
+
+    <include layout="@layout/item_split_line_margin" />
+
+    <LinearLayout
+        android:id="@+id/ll_backWay"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/margin_left_15"
+        android:paddingRight="@dimen/margin_left_15">
+
+        <TextView
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:text="回款方式"
+            android:textColor="@color/context_color"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_backWay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="请选择回款方式"
+            android:textColor="@color/context_color"
+            android:textSize="@dimen/secondary_text_size" />
+    </LinearLayout>
+
+    <include layout="@layout/item_split_line_margin" />
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="@dimen/margin_left_15"
+        android:layout_marginRight="@dimen/margin_left_15"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_selecter_littleround_blue_darkblue"
+        android:text="保存"
+        android:textColor="@color/white"
+        android:textSize="@dimen/context_text" />
+
+    <LinearLayout
+        android:id="@+id/ll_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/btn_delet"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="@dimen/margin_left_15"
+            android:layout_marginRight="@dimen/margin_left_15"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_selecter_littleround_blue_white_darkwhite"
+            android:clickable="true"
+            android:text="删除"
+            android:textColor="@color/main_back"
+            android:textSize="@dimen/context_text" />
+
+        <Button
+            android:id="@+id/btn_etSave"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="@dimen/margin_left_15"
+            android:layout_marginRight="@dimen/margin_left_15"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_selecter_littleround_blue_darkblue"
+            android:clickable="true"
+            android:text="保存"
+            android:textColor="@color/white"
+            android:textSize="@dimen/context_text" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

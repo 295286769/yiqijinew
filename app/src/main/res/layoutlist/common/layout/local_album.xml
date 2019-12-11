@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <include layout="@layout/activity_title_layout" />
+
+    <include layout="@layout/item_split_line" />
+
+    <RelativeLayout
+        android:id="@+id/album_title_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/titlebar_height"
+        android:background="#ffffff"
+        android:gravity="top"
+        android:visibility="gone">
+
+        <com.yiqiji.money.modules.common.widget.FilterImageView
+            android:id="@+id/album_back"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:paddingLeft="@dimen/calendar_back_piddingleft"
+            android:paddingRight="@dimen/calendar_back_piddingright"
+            android:scaleType="fitCenter"
+            android:src="@drawable/left" />
+
+        <TextView
+            android:id="@+id/album_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:singleLine="true"
+            android:text="选择相册"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/text_18" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/module_line"
+        android:orientation="vertical">
+
+        <View style="@style/dividing_line_style" />
+
+        <ListView
+            android:id="@+id/local_album_list"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="@dimen/margin"
+            android:divider="@color/split_line"
+            android:dividerHeight="0.5dp"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/progress_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="center"
+                android:src="@drawable/progress_icon"
+                android:visibility="visible" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_left_10"
+                android:gravity="center_vertical"
+                android:text="相册初始化中..."
+                android:textColor="@color/secondary_text"
+                android:textSize="@dimen/context_text" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

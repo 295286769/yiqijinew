@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/popuwindow_remarks"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_money_prompt"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:text="提示"
+            android:textColor="@color/context_color"
+            android:textSize="@dimen/text_18" />
+
+        <TextView
+            android:id="@+id/et_pop_money"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_money_prompt"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:textSize="@dimen/context_text" />
+
+        <View
+            android:id="@+id/view_money"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_above="@+id/ll_money_determine"
+            android:background="@color/split_line" />
+
+        <LinearLayout
+            android:id="@+id/ll_money_determine"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="确定"
+                android:textColor="#007AFF"
+                android:textSize="@dimen/text_18" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

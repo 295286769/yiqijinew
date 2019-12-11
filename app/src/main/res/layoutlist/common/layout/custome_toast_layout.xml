@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/toast_layout_root"
+    android:layout_width="60dp"
+    android:layout_height="60dp"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:text="A"
+        android:textSize="30sp"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/bg_oval_transgray"
+        android:gravity="center"
+        />
+</LinearLayout>

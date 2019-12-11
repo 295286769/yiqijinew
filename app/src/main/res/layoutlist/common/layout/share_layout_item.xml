@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <com.yiqiji.money.modules.common.widget.MyViewGroup
+            android:id="@+id/share_viewgroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="30dp" />
+
+        <Button
+            android:id="@+id/cancell"
+            style="@style/user_name_text_18"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height"
+            android:layout_below="@+id/share_viewgroup"
+            android:background="@color/split_line"
+            android:gravity="center"
+            android:text="取消" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

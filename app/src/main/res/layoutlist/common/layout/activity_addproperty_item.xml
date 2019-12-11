@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_selecter_white_darkwhite"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="18dp"
+        android:paddingTop="18dp">
+
+        <ImageView
+            android:id="@+id/iv_icon"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_marginLeft="@dimen/margin_left_15"
+            android:layout_marginRight="15dp"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="现金钱包"
+            android:textColor="@color/title_color"
+            android:textSize="@dimen/context_text" />
+    </LinearLayout>
+
+
+    <include
+        android:id="@+id/v_devider"
+        layout="@layout/item_split_line_margin" />
+</LinearLayout>

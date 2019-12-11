@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/module_line"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/activity_title_layout" />
+
+    <View
+        android:id="@+id/view_singe"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/title"
+        android:background="@color/module_line" />
+
+
+    <LinearLayout
+        android:id="@+id/layout_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view_singe"
+        android:layout_marginBottom="80dp"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view_singe"
+            android:fillViewport="true"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/linea"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/need_pay_collect"
+                        style="@style/text_while"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/needpay_pading"
+                        android:paddingRight="@dimen/needpay_pading"
+                        android:text="我应收款" />
+
+                    <TextView
+                        android:id="@+id/money"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0.00"
+                        android:textColor="@color/context_color"
+                        android:textSize="@dimen/text_30" />
+                </LinearLayout>
+
+                <com.yiqiji.money.modules.common.view.MyRecyclerView
+                    android:id="@+id/list_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_left_10"
+                    android:scrollbars="none" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_left_10"
+                    android:background="@color/white">
+
+                    <TextView
+                        android:id="@+id/change_settlement_member"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:padding="@dimen/margin_left_15"
+                        android:text="更换结算对象"
+                        android:textColor="@color/context_color"
+                        android:textSize="@dimen/context_text" />
+
+                    <ImageView
+                        android:layout_width="@dimen/list_item_right_image_height"
+                        android:layout_height="@dimen/list_item_right_image_height"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/margin_left_15"
+                        android:src="@drawable/arrow" />
+                </RelativeLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/comit"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height"
+            android:layout_margin="@dimen/margin_left_15"
+            android:background="@drawable/edit_book_return"
+            android:gravity="center"
+            android:text="完成结算"
+            android:textColor="@color/white"
+            android:textSize="@dimen/context_text" />
+    </LinearLayout>
+
+    <include
+        android:id="@+id/keyboard_view"
+        layout="@layout/keyboard_many_people"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/not_data"
+        layout="@layout/note_data_base"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/view_singe"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+</RelativeLayout>

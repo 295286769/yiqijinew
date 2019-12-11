@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/export_bookbg"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_common_head" />
+
+
+    <com.yiqiji.money.modules.common.control.LinearLayoutForItem
+        android:id="@+id/ll_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/ll_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:id="@+id/rl_sTime"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="开始时间"
+                android:textColor="@color/title_color"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tvStime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:drawablePadding="5dp"
+                android:drawableRight="@drawable/gray_arrow"
+                android:text="2017年5月20"
+                android:textColor="@color/secondary_text"
+                android:textSize="12sp" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/split_line" />
+
+
+        <RelativeLayout
+            android:id="@+id/rl_eTime"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="结束时间"
+                android:textColor="@color/title_color"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tvEtime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:drawablePadding="5dp"
+                android:drawableRight="@drawable/gray_arrow"
+                android:text="2017年5月20"
+                android:textColor="@color/secondary_text"
+                android:textSize="12sp" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_common_head" />
+
+
+    <RelativeLayout
+        android:id="@+id/rl_remind"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height"
+        android:background="@drawable/bg_mine_press">
+
+        <ToggleButton
+            android:id="@+id/tg_btn"
+            android:layout_width="54dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="13dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/selector_toggler"
+            android:textOff=""
+            android:textOn="" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_left_10"
+            android:text="记账提醒"
+            android:textColor="@color/context_color"
+            android:textSize="@dimen/context_text" />
+
+    </RelativeLayout>
+
+    <include layout="@layout/item_split_line_margin" />
+
+    <LinearLayout
+        android:id="@+id/ll_remind"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl_remindTime"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_height"
+            android:background="@drawable/bg_mine_press">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin_left_10"
+                android:text="提醒时间"
+                android:textColor="@color/context_color"
+                android:textSize="@dimen/context_text" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/margin_left_15"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="5dp"
+                    android:text="19:30"
+                    android:textColor="@color/secondary_text"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:layout_width="@dimen/list_item_right_image_height"
+                    android:layout_height="@dimen/list_item_right_image_height"
+                    android:src="@drawable/arrow" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <include layout="@layout/item_split_line_margin" />
+
+        <RelativeLayout
+            android:id="@+id/rl_remindType"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_height"
+            android:background="@drawable/bg_mine_press">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin_left_10"
+                android:text="提醒方式"
+                android:textColor="@color/context_color"
+                android:textSize="@dimen/context_text" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/margin_left_15"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="5dp"
+                    android:text="每天"
+                    android:textColor="@color/secondary_text"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:layout_width="@dimen/list_item_right_image_height"
+                    android:layout_height="@dimen/list_item_right_image_height"
+                    android:src="@drawable/arrow" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <include layout="@layout/item_split_line_margin" />
+    </LinearLayout>
+
+</LinearLayout>

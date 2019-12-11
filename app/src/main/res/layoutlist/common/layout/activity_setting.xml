@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/activity_title_layout" />
+
+    <include layout="@layout/item_split_line" />
+
+    <RelativeLayout
+        android:id="@+id/rlExportDt"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height"
+        android:background="@drawable/bg_mine_press">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_left_15"
+            android:text="导出数据"
+            android:textColor="@color/context_color"
+            android:textSize="@dimen/context_text" />
+
+        <ImageView
+            android:layout_width="@dimen/size_image_18"
+            android:layout_height="@dimen/size_image_18"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_left_15"
+            android:src="@drawable/arrow" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/margin_left_15"
+        android:layout_marginRight="@dimen/margin_left_15"
+        android:background="@color/split_line" />
+
+
+    <RelativeLayout
+        android:id="@+id/rl_setting_service"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height"
+        android:background="@drawable/bg_mine_press">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_left_15"
+            android:text="服务条款"
+            android:textColor="@color/context_color"
+            android:textSize="@dimen/context_text" />
+
+        <ImageView
+            android:layout_width="@dimen/size_image_18"
+            android:layout_height="@dimen/size_image_18"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_left_15"
+            android:src="@drawable/arrow" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/margin_left_15"
+        android:layout_marginRight="@dimen/margin_left_15"
+        android:background="@color/split_line"></View>
+
+    <RelativeLayout
+        android:id="@+id/rl_setting_about"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height"
+        android:background="@drawable/bg_mine_press">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_left_15"
+            android:text="关于我们"
+            android:textColor="@color/context_color"
+            android:textSize="@dimen/context_text" />
+
+        <ImageView
+            android:layout_width="@dimen/size_image_18"
+            android:layout_height="@dimen/size_image_18"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_left_15"
+            android:src="@drawable/arrow" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/margin_left_15"
+        android:layout_marginRight="@dimen/margin_left_15"
+        android:background="@color/split_line"></View>
+
+    <RelativeLayout
+        android:id="@+id/rl_setting_version"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height"
+        android:background="@color/white"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_left_15"
+            android:text="版本号"
+            android:textColor="@color/context_color"
+            android:textSize="@dimen/context_text" />
+
+        <TextView
+            android:id="@+id/tv_setting_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_left_15" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/margin_left_15"
+        android:layout_marginRight="@dimen/margin_left_15"
+        android:background="@color/split_line"
+        android:visibility="gone"></View>
+
+    <Button
+        android:id="@+id/rl_my_sign_out_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_left_15"
+        android:layout_marginRight="@dimen/margin_left_15"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/login_button_blue"
+        android:text="退出登录"
+        android:textColor="@color/white"
+        android:textSize="@dimen/context_text" />
+
+
+</LinearLayout>

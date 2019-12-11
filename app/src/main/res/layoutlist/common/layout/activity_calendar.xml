@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/title_back_color"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/calendar_title">
+
+        <TextView
+            android:id="@+id/today"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:paddingBottom="@dimen/margin_left_10"
+            android:paddingLeft="@dimen/margin_left_15"
+            android:paddingRight="@dimen/margin_left_20"
+            android:paddingTop="@dimen/margin_left_10"
+            android:text="@string/calendar_today_text"
+            android:textColor="@color/main_back"
+            android:textSize="@dimen/text_16"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:padding="10dp"
+            android:text="@string/calendar_title_text"
+            android:textColor="@color/context_color"
+            android:textSize="@dimen/text_16"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/text"
+            android:paddingBottom="@dimen/calendar_back_piddingbottom"
+            android:paddingLeft="@dimen/calendar_back_piddingright"
+            android:paddingRight="@dimen/calendar_back_piddingright"
+            android:paddingTop="@dimen/calendar_back_piddingleft"
+            android:scaleType="matrix"
+            android:src="@drawable/cancle_icon" />
+    </RelativeLayout>
+
+    <com.yiqiji.money.modules.common.view.calenderview.WeekDayView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/calendar_day" />
+
+    <RelativeLayout
+        android:id="@+id/listHeight"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/calender_bagroud_color">
+
+        <com.yiqiji.money.modules.common.view.calenderview.DayPickerView
+            android:id="@+id/pickView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+        <ImageView
+            android:id="@+id/back_original"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/text_10"
+            android:layout_marginRight="@dimen/text_10"
+            android:padding="@dimen/text_10"
+            android:scaleType="matrix"
+            android:src="@drawable/aircraft"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/module_line_new">
+
+    <ImageView
+        android:id="@+id/iv_expend_people"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/margin_left_15" />
+
+    <TextView
+        android:id="@+id/tv_expend_people_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="@dimen/margin_left_15"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/iv_expend_people"
+        android:text="付款人（1）"
+        android:textSize="@dimen/context_text" />
+
+    <ImageView
+        android:id="@+id/item_more"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/margin_left_15"
+        android:src="@drawable/arrow" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dp"
+        android:layout_toLeftOf="@+id/item_more"
+        android:text="更多"
+        android:textColor="@color/secondary_text"
+        android:textSize="@dimen/secondary_text_size" />
+
+</RelativeLayout>

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/details_title"
+                layout="@layout/activity_title_layout"/>
+
+            <View
+                android:id="@+id/rl_view_title"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/state_bar_height_25"
+                android:background="@color/title_back_color"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/rl_details_title"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/titlebar_height"
+                android:background="@color/title_back_color"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/iv_details_return"
+                    style="@style/title_get_back" />
+
+
+                <RadioGroup
+                    android:id="@+id/radio_group_details"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/property_radiog_bg"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_details_expenditure"
+                        android:layout_width="@dimen/radioButton_width"
+                        android:layout_height="@dimen/radioButton_height"
+                        android:background="@drawable/property_radiabutton_selecter"
+                        android:button="@null"
+                        android:checked="true"
+                        android:gravity="center"
+                        android:text="支出"
+                        android:textSize="15sp"
+                        android:textColor="@color/radio_btn_textcolor_selecter" />
+
+                    <RadioButton
+                        android:id="@+id/rb_details_income"
+                        android:layout_width="@dimen/radioButton_width"
+                        android:layout_height="@dimen/radioButton_height"
+                        android:background="@drawable/property_radiabutton_selecter_right"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="收入"
+                        android:textSize="15sp"
+                        android:textColor="@color/radio_btn_textcolor_selecter" />
+                </RadioGroup>
+            </RelativeLayout>
+
+            <include layout="@layout/item_split_line" />
+
+        </LinearLayout>
+
+        <ScrollView
+            android:id="@+id/scroll_expend"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_below="@id/ll_title"
+            android:layout_weight="1"
+            android:fillViewport="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <include
+                    android:id="@+id/i_accounting_money"
+                    layout="@layout/item_accounting_money"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <include
+                    android:id="@+id/i_accounting_write"
+                    layout="@layout/item_accounting_write"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/i_accounting_money"/>
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rl_details"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/i_accounting_write"
+                    android:overScrollMode="never"
+                    android:scrollbars="vertical"/>
+
+                <include
+                    android:id="@+id/i_accounting_icon"
+                    layout="@layout/item_accounting_icon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/i_accounting_money"
+                    android:layout_marginTop="-15dp"
+                    android:visibility="gone"/>
+            </RelativeLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/ll_expend_button"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/bt_expend_agin"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/add_book_confirm"
+                android:text="再记一笔"
+                android:textColor="@color/main_back"
+                android:textSize="@dimen/context_text" />
+
+            <Button
+                android:id="@+id/bt_expend_confirm"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/edit_book_return"
+                android:text="保存"
+                android:textColor="@color/white"
+                android:textSize="@dimen/context_text" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <include
+        android:id="@+id/keyboard_view"
+        layout="@layout/keyboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"/>
+
+    <include layout="@layout/activity_bill_add_show" />
+
+</RelativeLayout>

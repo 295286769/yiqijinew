@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:imagecontrol="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <cn.bingoogolapple.bgabanner.BGABanner
+        android:id="@+id/banner"
+        style="@style/BannerDefaultStyle"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/white"
+        imagecontrol:banner_pointDrawable="@drawable/guide_dot_selector"
+        imagecontrol:banner_transitionEffect="defaultEffect" />
+
+
+    <LinearLayout
+        android:id="@+id/tab_group_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_tab_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="12dp"/>
+
+        <com.yiqiji.money.modules.Found.view.TabHSView
+            android:id="@+id/h_scroll_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+            <!--     <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:orientation="horizontal">
+
+                 </LinearLayout>-->
+        </com.yiqiji.money.modules.Found.view.TabHSView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@color/secondary_title_color"></View>
+    </LinearLayout>
+</LinearLayout>

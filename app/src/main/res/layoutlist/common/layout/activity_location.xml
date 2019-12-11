@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_back">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_radiogroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/title_back_color"
+            android:orientation="vertical">
+
+            <include
+                layout="@layout/activity_title_layout" />
+
+
+            <View
+                android:id="@+id/view_location_title"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/state_bar_height_25"
+                android:background="@color/title_back_color"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/rl_location_title"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/titlebar_height"
+                android:background="@color/title_back_color"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv_cancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:padding="10dp"
+                    android:text="取消"
+                    android:textColor="@color/title_text_color"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toLeftOf="@+id/tv_cancel"
+                    android:background="@drawable/activity_search_bg_stock"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/icon_search" />
+
+                    <EditText
+                        android:id="@+id/et_input"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_vertical"
+                        android:background="@null"
+                        android:hint="搜索附近所在位置"
+                        android:imeOptions="actionSearch"
+                        android:inputType="text"
+                        android:paddingBottom="7dp"
+                        android:paddingLeft="2dp"
+                        android:paddingTop="7dp"
+                        android:singleLine="true"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <include layout="@layout/item_split_line" />
+
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/lv_location_listView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:divider="@color/split_line"
+            android:dividerHeight="0.5dp"
+            android:listSelector="@android:color/transparent" />
+
+        <ListView
+            android:id="@+id/lv_location_listView2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:divider="@color/module_line"
+            android:dividerHeight="1dp"
+            android:listSelector="@android:color/transparent"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

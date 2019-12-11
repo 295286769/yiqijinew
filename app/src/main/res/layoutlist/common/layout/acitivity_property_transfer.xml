@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <include
+        android:id="@+id/rl_head"
+        layout="@layout/include_common_head" />
+
+    <RelativeLayout
+        android:id="@+id/rl_input"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_below="@+id/rl_head"
+        android:paddingTop="10dp">
+
+        <EditText
+            android:id="@+id/et_Money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_left_15"
+            android:background="@null"
+            android:hint="0.00"
+            android:inputType="numberDecimal"
+            android:maxLength="12"
+            android:singleLine="true"
+            android:textColor="@color/title_text_color"
+            android:textSize="22sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/et_Money"
+            android:paddingLeft="@dimen/margin_left_15"
+            android:paddingRight="@dimen/margin_left_15"
+            android:text="￥"
+            android:textColor="@color/black"
+            android:textSize="24sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="#F4F4F4" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_transfer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_input"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ll_transFrom"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv_fromIcon"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical"
+                android:scaleType="fitCenter"
+                android:src="@drawable/write_select_account" />
+
+            <TextView
+                android:id="@+id/tv_transFrom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="6dp"
+                android:text="转出账户" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:src="@drawable/write_transfer" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_transTo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv_toIcon"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical"
+                android:scaleType="fitCenter"
+                android:src="@drawable/write_select_account" />
+
+            <TextView
+                android:id="@+id/tv_transTo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="6dp"
+                android:text="转入账户" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_transfer"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="@dimen/margin_left_15"
+        android:layout_marginRight="@dimen/margin_left_15"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/bg_selecter_littleround_blue_darkblue"
+        android:text="保存"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+</RelativeLayout>

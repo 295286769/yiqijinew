@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/relayout_item"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@drawable/bg_selecter_white_darkwhite"
+        android:descendantFocusability="afterDescendants"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/margin_left_15"
+        android:paddingRight="@dimen/margin_left_15"
+        android:paddingTop="4dp">
+
+        <ImageView
+            android:id="@+id/bill_categoryImage"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/group_settlement"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/bill_categoryImage"
+            android:ellipsize="end"
+            android:text="成员交款"
+            android:textColor="@color/title_color"
+            android:textSize="15sp" />
+
+
+        <TextView
+            android:id="@+id/blance"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="right"
+            android:gravity="center_vertical"
+            android:text="10000" />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:background="@drawable/bg_selecter_white_darkwhite"
+        android:descendantFocusability="afterDescendants"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/margin_left_15"
+        android:paddingRight="@dimen/margin_left_15">
+
+        <View
+            android:id="@+id/view_placeholder"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="@dimen/pingding_5"
+            android:src="@drawable/icon_106" />
+
+        <TextView
+            android:id="@+id/bill_settlementPartIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/view_placeholder"
+            android:background="@drawable/activity_bill_item_graybagroun"
+            android:text="未参与"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/bill_settlementText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/bill_settlementPartIn"
+            android:background="@drawable/activity_bill_item_graybagroun"
+            android:text="已结算"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/tv_paymentCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right"
+            android:gravity="center_vertical"
+            android:text="2人交款"
+            android:textColor="@color/secondary_text"
+            android:textSize="12sp"
+            />
+    </RelativeLayout>
+
+    <View
+        style="@style/dividing_line_style"
+        android:layout_marginTop="4dp"
+        ></View>
+</LinearLayout>

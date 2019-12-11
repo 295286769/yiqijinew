@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    android:orientation="vertical">
+
+    <com.yiqiji.money.modules.common.view.PullToRefreshLayout
+        android:id="@+id/refreshable_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="75dp">
+
+        <include layout="@layout/refresh_head" />
+
+        <com.yiqiji.money.modules.common.view.WebViewLinear
+            android:id="@+id/layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="75dp"
+            android:fadingEdge="none"
+            android:orientation="vertical"
+            android:overScrollMode="never"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <com.yiqiji.money.modules.common.widget.MyProgressBar
+                    android:id="@+id/progressBar"
+                    style="@style/ProgressBarHorizontalToWeb"
+                    android:layout_width="match_parent"
+                    android:layout_margin="5dp"
+                    android:indeterminate="false"
+                    android:max="100"
+                    android:progress="0" />
+
+                <WebView
+                    android:id="@+id/webView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+        </com.yiqiji.money.modules.common.view.WebViewLinear>
+
+        <include layout="@layout/load_more" />
+    </com.yiqiji.money.modules.common.view.PullToRefreshLayout>
+
+</LinearLayout>

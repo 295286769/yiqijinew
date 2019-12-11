@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingTop="10dp" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog_bg_radius5_white"
+        android:minHeight="100dp" >
+
+        <TextView
+            android:id="@+id/dialog_text_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/hint_info"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dialog_text_title"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:padding="10dip"
+            android:textColor="@color/black"
+            android:textSize="@dimen/context_text" />
+
+        <View
+            android:id="@+id/view_dialog"
+            android:layout_width="match_parent"
+            android:layout_height="0.8dp"
+            android:layout_below="@id/hint_info"
+            android:layout_marginTop="15dp"
+            android:alpha="0.3"
+            android:background="@color/dialog_line_color" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dip"
+            android:layout_below="@id/view_dialog"
+            android:gravity="center" >
+
+            <Button
+                android:id="@+id/exit_cancels"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:clickable="false"
+                android:textColor="@color/expenditure_income_button_color" />
+
+            <View
+                android:id="@+id/line"
+                android:layout_width="0.8dip"
+                android:layout_height="fill_parent"
+                android:alpha="0.3"
+                android:background="@color/dialog_line_color" />
+
+            <Button
+                android:id="@+id/exit_oks"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:textColor="@color/expenditure_income_button_color" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

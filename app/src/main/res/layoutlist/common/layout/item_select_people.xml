@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.yiqiji.money.modules.common.view.RelativeLayoutSelectPeople
+        android:id="@+id/rl_select_ischeck"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_mine_press"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp">
+
+
+        <com.yiqiji.money.modules.common.view.CircleImageView
+            android:id="@+id/iv_select_people_icon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_left_15"
+            android:src="@drawable/add" />
+
+        <TextView
+            android:id="@+id/tv_select_people_name"
+            style="@style/name_maxLength"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/iv_select_people_icon"
+            android:text="啊哈" />
+
+        <CheckBox
+            android:id="@+id/cb_select_ischeck"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_left_15"
+            android:layout_marginRight="@dimen/margin_left_15"
+            android:background="@drawable/select_people_checkbox"
+            android:button="@null" />
+    </com.yiqiji.money.modules.common.view.RelativeLayoutSelectPeople>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="@dimen/margin_left_15"
+        android:layout_marginRight="@dimen/margin_left_15"
+        android:background="@color/split_line" />
+
+</LinearLayout>

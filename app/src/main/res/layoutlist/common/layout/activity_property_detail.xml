@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+    <!--标题-->
+    <include
+        android:id="@+id/rl_head"
+        layout="@layout/include_common_head" />
+
+    <com.yiqiji.money.modules.common.control.RelativeLayoutWithCorner
+        android:id="@+id/rl_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_head"
+        android:layout_margin="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="15dp"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="4dp"
+            android:text="信用卡"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_mark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tv_name"
+            android:layout_alignTop="@+id/tv_name"
+            android:layout_toRightOf="@+id/tv_name"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:maxWidth="140dp"
+            android:paddingLeft="4dp"
+            android:singleLine="true"
+            android:text="信用卡"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/activity_edit_bg"
+            android:paddingBottom="3dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="3dp"
+            android:text="编辑"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/iv_complet"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/tv_edit"
+            android:scaleType="centerCrop"
+            android:src="@drawable/icon_complete" />
+
+        <TextView
+            android:id="@+id/tv_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/tv_name"
+            android:paddingLeft="4dp"
+            android:paddingTop="20dp"
+            android:text="当前欠款"
+            android:textColor="@color/white"
+            android:textSize="@dimen/secondary_text_size" />
+
+        <TextView
+            android:id="@+id/tv_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_desc"
+            android:paddingBottom="34dp"
+            android:paddingLeft="4dp"
+            android:paddingTop="10dp"
+            android:text="12.00"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+
+
+        <LinearLayout
+            android:id="@+id/ll_chekData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_money"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_chek"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="账单日"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tv_chekData"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:paddingTop="2dp"
+                    android:singleLine="true"
+                    android:text="03月01日"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="2dp"
+                android:background="@color/white" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/margin_left_10">
+
+                <TextView
+                    android:id="@+id/tv_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="还款日"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tv_backData"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:paddingTop="2dp"
+                    android:singleLine="true"
+                    android:text="03月01日"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="2dp"
+                android:background="@color/white" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/margin_left_10">
+
+                <TextView
+                    android:id="@+id/tv_limit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="信用额度"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tv_limitMoney"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:paddingTop="2dp"
+                    android:singleLine="true"
+                    android:text="0.00"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </com.yiqiji.money.modules.common.control.RelativeLayoutWithCorner>
+
+
+    <!--资产对应的账单列表-->
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl_card"
+        android:divider="@null"
+        android:listSelector="@color/full_transparent"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/ll_complet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_card"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btn_complet"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="@dimen/margin_left_15"
+        android:layout_marginRight="@dimen/margin_left_15"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_selecter_littleround_blue_darkblue"
+        android:text="完结"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/iv_noBillData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="90dp"
+        android:paddingRight="90dp"
+        android:layout_above="@+id/btn_complet"
+        android:layout_below="@+id/rl_card"
+        android:layout_centerHorizontal="true"
+        android:scaleType="centerInside"
+        android:src="@drawable/icon_nodata" />
+
+</RelativeLayout>

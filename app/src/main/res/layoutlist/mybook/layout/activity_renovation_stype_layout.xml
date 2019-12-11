@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.yiqiji.frame.ui.wigit.BaseTitleLayout
+        android:id="@+id/title_renovation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <include layout="@layout/item_split_line" />
+
+    <com.yiqiji.money.modules.common.widget.BaseRecylerview
+        android:id="@+id/list_renovation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:fadingEdge="none"
+        android:overScrollMode="never"
+        android:scrollbars="none" />
+
+</LinearLayout>

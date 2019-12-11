@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/settment_bagroud"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/layou_settlemnt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/margin_left_15">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="请确认已完成金额结算"
+                android:textColor="@color/context_color"
+                android:textSize="@dimen/context_text" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="此操作不可撤销,请谨慎操作"
+                android:textColor="@color/context_color"
+                android:textSize="@dimen/context_text" />
+        </LinearLayout>
+
+        <com.yiqiji.money.modules.common.view.MyRecyclerView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fadingEdge="none"
+            android:overScrollMode="never"
+            android:scrollbars="none" />
+    </LinearLayout>
+
+</LinearLayout>

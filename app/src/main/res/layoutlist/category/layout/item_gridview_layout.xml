@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="50dp"
+    android:layout_height="50dp">
+    <ImageView
+        android:id="@+id/icon_img"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_margin="10dp"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_add_category_90_90"/>
+
+    <ImageView
+        android:id="@+id/icon_img_bg"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:background="@drawable/write_default_expenditure"/>
+</FrameLayout>

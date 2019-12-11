@@ -1,0 +1,6 @@
+﻿<!-- 左边圆角，右边直角 灰色边框，白色填充 -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+   <solid android:color="@color/white" />
+   <stroke android:width="1dp" android:color="#D8D8D8"/>
+   <corners android:radius="3dp"/>
+</shape>

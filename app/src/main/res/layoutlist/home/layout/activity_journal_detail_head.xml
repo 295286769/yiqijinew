@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/relayout_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/margin_left_10"
+        android:paddingLeft="@dimen/margin_left_15"
+        android:paddingRight="@dimen/margin_left_15"
+        android:paddingTop="@dimen/margin_left_10">
+
+        <TextView
+            android:id="@+id/journal_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="10dp"
+            android:text=""
+            android:textColor="@color/secondary_text"
+            android:textSize="@dimen/text_13"
+            android:visibility="gone" />
+
+        <com.yiqiji.money.modules.common.view.CircleImageView
+            android:id="@+id/head_image"
+            android:layout_width="@dimen/image_head_height_30"
+            android:layout_height="@dimen/image_head_height_30"
+            android:layout_below="@+id/journal_date"
+            android:layout_marginTop="@dimen/margin_left_5" />
+
+        <TextView
+            android:id="@+id/content_text"
+            style="@style/user_name_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/journal_date"
+            android:layout_marginLeft="@dimen/margin_left_15"
+            android:layout_marginTop="@dimen/margin_left_5"
+            android:layout_toRightOf="@+id/head_image"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/content_text"
+            android:layout_below="@+id/content_text"
+            android:layout_marginTop="@dimen/margin_left_5"
+            android:paddingRight="@dimen/margin_left_5"
+            android:text=""
+            android:textColor="#d3d3d3"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/stage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/username"
+            android:layout_below="@+id/content_text"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="2.5dp"
+            android:layout_toRightOf="@+id/username"
+            android:background="@drawable/activity_bill_item_graybagroun"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="11sp"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/location_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/username"
+            android:layout_toRightOf="@+id/stage"
+            android:scaleType="centerInside"
+            android:src="@drawable/locationimage"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/location_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/location_image"
+            android:layout_toRightOf="@+id/location_image"
+            android:ellipsize="end"
+            android:paddingLeft="2dp"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="#d3d3d3"
+            android:textSize="11sp"
+            android:visibility="gone" />
+
+        <com.yiqiji.money.modules.homeModule.home.view.JournalRoundedImageView
+            android:id="@+id/roundedImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/content_text"
+            android:layout_below="@+id/username"
+            android:layout_marginTop="@dimen/margin_left_10"
+            android:scaleType="centerCrop"
+            android:visibility="gone"
+            app:sriv_left_bottom_corner_radius="5dp"
+            app:sriv_left_top_corner_radius="5dp"
+            app:sriv_right_bottom_corner_radius="5dp"
+            app:sriv_right_top_corner_radius="5dp" />
+
+        <!--  <LinearLayout
+              android:id="@+id/image_layout"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_below="@+id/content_text"
+              android:layout_marginLeft="@dimen/margin_left_15"
+              android:layout_marginTop="@dimen/margin_left_10"
+              android:layout_toRightOf="@+id/head_image"
+              android:orientation="vertical"></LinearLayout>-->
+        <com.yiqiji.money.modules.common.widget.BaseRecylerview
+            android:id="@+id/image_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/content_text"
+            android:layout_below="@+id/content_text"
+            android:layout_marginTop="@dimen/margin_left_10"
+            android:fadingEdge="none"
+            android:overScrollMode="never"
+            android:scrollbars="none"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <include layout="@layout/item_split_line" />
+
+    <TextView
+        android:id="@+id/operator"
+        style="@style/text_light_centent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_left_15"
+        android:layout_marginTop="@dimen/margin_left_20"
+        android:text="操作人" />
+
+    <TextView
+        android:id="@+id/time"
+        style="@style/text_light_centent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_left_15"
+        android:layout_marginTop="@dimen/margin_left_10"
+        android:text="操作时间" />
+
+
+    <RelativeLayout
+        android:id="@+id/rela"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_left_15">
+
+        <TextView
+            style="@style/text_light_centent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_left_15"
+            android:drawableLeft="@drawable/comment_diary"
+            android:drawablePadding="@dimen/pingding_5"
+            android:text="大家的评论" />
+
+        <TextView
+            android:id="@+id/write"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/margin_left_15"
+            android:text="写评论"
+            android:textColor="@color/main_back"
+            android:textSize="@dimen/context_text"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <!-- <RelativeLayout
+         android:id="@+id/layout_clickreview"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content">
+
+         <TextView
+             android:id="@+id/pinglun_text"
+             style="@style/text_gray_14"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:paddingLeft="@dimen/margin_left_15"
+             android:paddingRight="@dimen/margin_left_15"
+             android:paddingTop="@dimen/margin_left_10"
+             android:text="评论(0)" />
+
+         <TextView
+             android:id="@+id/write"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentRight="true"
+             android:paddingLeft="@dimen/margin_left_15"
+             android:paddingRight="@dimen/margin_left_15"
+             android:paddingTop="@dimen/margin_left_10"
+             android:text="写评论"
+             android:textColor="@color/main_back"
+             android:textSize="@dimen/context_text" />
+     </RelativeLayout>-->
+
+    <LinearLayout
+        android:id="@+id/comment_click_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingBottom="50dp"
+        android:paddingTop="50dp"
+        android:visibility="gone">
+
+        <include
+            android:id="@+id/not_comment"
+            layout="@layout/not_date_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:id="@+id/comment_click"
+            style="@style/text_gray_14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="" />
+    </LinearLayout>
+
+</LinearLayout>

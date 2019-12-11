@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/activity_title_layout" />
+
+    <include layout="@layout/item_split_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/title"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:id="@+id/iv_change_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/change_phone" />
+
+
+        <TextView
+            android:id="@+id/tv_change_mobile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:text="1820144444"
+            android:textColor="@color/context_color"
+            android:textSize="@dimen/text_20" />
+
+        <TextView
+            android:id="@+id/tv_change_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:text="已绑定手机号"
+            android:textColor="@color/wealth_button"
+            android:textSize="@dimen/text_20" />
+
+
+        <Button
+            android:id="@+id/bt_change_mobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_left_15"
+            android:layout_marginRight="@dimen/margin_left_15"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/login_button_blue"
+            android:text="更换手机号码"
+            android:textColor="@color/white"
+            android:textSize="@dimen/context_text" />
+
+    </LinearLayout>
+
+</LinearLayout>

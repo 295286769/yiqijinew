@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/bg_selecter_white_darkwhite"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tv_item_location_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_left_15"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/context_color"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tv_item_location_addr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_item_location_name"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="@dimen/margin_left_15"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/secondary_text" />
+
+    <TextView
+        android:id="@+id/tv_item_location_not_show"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/margin_left_15"
+        android:text="不显示位置"
+        android:visibility="gone"
+        android:textColor="@color/main_back"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/iv_item_location_selected"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        android:layout_marginRight="@dimen/margin_left_15"
+        android:src="@drawable/loction_selected" />
+</RelativeLayout>

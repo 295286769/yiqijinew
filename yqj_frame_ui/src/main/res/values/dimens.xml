@@ -1,0 +1,59 @@
+<resources>
+
+    <!-- UI elements -->
+    <dimen name="dimens_20">20dp</dimen>
+    <dimen name="dimens_18">18dp</dimen>
+    <dimen name="dimens_48">48dp</dimen>
+    <dimen name="dimens_50">50dp</dimen>
+    <dimen name="dimens_12">12sp</dimen>
+    <dimen name="text_size_medium">16sp</dimen>
+    <dimen name="text_size_large">18sp</dimen>
+
+    <!-- 字体颜色-->
+    <dimen name="text_size_f9">8sp</dimen>
+    <dimen name="text_size_f10">10sp</dimen>
+    <dimen name="text_size_f11">12sp</dimen>
+    <dimen name="text_size_f12">14sp</dimen>
+    <dimen name="text_size_f13">16sp</dimen>
+    <dimen name="text_size_f14">17sp</dimen>
+    <dimen name="text_size_f15">18sp</dimen>
+    <dimen name="text_size_f16">19sp</dimen>
+    <dimen name="text_size_f17">20sp</dimen>
+    <dimen name="text_size_f18">21sp</dimen>
+    <dimen name="text_size_f19">22sp</dimen>
+
+    <!-- 字体大小-->
+    <dimen name="font_size_f9">9sp</dimen>
+    <dimen name="font_size_f10">10sp</dimen>
+    <dimen name="font_size_f11">11sp</dimen>
+    <dimen name="font_size_f12">12sp</dimen>
+    <dimen name="font_size_f13">13sp</dimen>
+    <dimen name="font_size_f14">14sp</dimen>
+    <dimen name="font_size_f15">15sp</dimen>
+    <dimen name="font_size_f16">16sp</dimen>
+    <dimen name="font_size_f17">17sp</dimen>
+    <dimen name="font_size_f18">18sp</dimen>
+    <dimen name="font_size_f19">19sp</dimen>
+    <dimen name="font_size_f20">20sp</dimen>
+    <dimen name="font_size_f21">21sp</dimen>
+    <dimen name="font_size_f24">24sp</dimen>
+
+    <!--新规范按钮边框描绘高度-->
+    <dimen name="button_bg_stroke">1px</dimen>
+    <dimen name="button_bg_padding_left">12dp</dimen>
+    <dimen name="button_bg_padding_top">6dp</dimen>
+    <dimen name="text_font_f13">13sp</dimen>
+
+    <!--快递方式和本土退货图标的大小-->
+    <dimen name="icon_deliver_and_refund_height_width">12dp</dimen>
+    <!---->
+    <dimen name="state_title_bar_height">25dp</dimen>
+
+    <!-- 界面主标题文大小  如：设置 -->
+    <dimen name="contexts_titel_text_ui">18sp</dimen>
+    <!-- 界面小标题文大小  如：使用账号密码登入 -->
+    <dimen name="context_text_ui">15sp</dimen>
+    <!-- 次要文字大小-->
+    <dimen name="secondary_text_size_ui">13sp</dimen>
+
+</resources>

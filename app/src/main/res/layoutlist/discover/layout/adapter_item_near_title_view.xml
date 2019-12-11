@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="30dp"
+    android:background="@color/decorate_title_color"
+    android:orientation="vertical"
+    android:paddingBottom="4dp"
+    android:paddingLeft="12dp"
+    android:paddingRight="12dp"
+    android:paddingTop="4dp">
+
+    <TextView
+        android:id="@+id/tv_change"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:gravity="center_vertical"
+        android:paddingRight="3dp"
+        android:text="修改"
+        android:textColor="@color/secondary_text"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/deafault_house"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toLeftOf="@+id/tv_change"
+        android:text="默认小区: 北海公园"
+        android:gravity="center_vertical"
+        android:textColor="@color/title_color"
+        android:textSize="16sp" />
+
+
+</RelativeLayout>

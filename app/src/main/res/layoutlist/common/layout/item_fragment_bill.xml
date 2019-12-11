@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.yiqiji.money.modules.common.view.MothsMoneyView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/list_son_item_height"
+        android:background="@color/white" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_selecter_white_darkwhite"
+        android:orientation="horizontal">
+
+
+        <include layout="@layout/activity_bill_item" />
+    </LinearLayout>
+
+    <include layout="@layout/item_split_line_margin_pesent_three" />
+</LinearLayout>

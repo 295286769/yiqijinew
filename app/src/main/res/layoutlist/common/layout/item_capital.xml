@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp">
+
+    <TextView
+        android:id="@+id/tv_item_capital_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_left_15"
+        android:text="提现"
+        android:textColor="@color/context_color"
+        />
+
+
+    <TextView
+        android:id="@+id/tv_item_capital_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/tv_item_capital_type"
+        android:layout_below="@id/tv_item_capital_type"
+        android:layout_marginTop="5dp"
+        android:text="2016-09-01"
+        />
+
+    <TextView
+        android:id="@+id/tv_item_capital_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/margin_left_15"
+        android:text="9000"
+        android:textColor="@color/context_color"/>
+</RelativeLayout>

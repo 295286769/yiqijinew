@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/activity_title_layout" />
+
+    <include layout="@layout/item_split_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_color"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/main_back"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/margin_left_15">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                android:src="@drawable/add_member_image" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_left_15"
+                android:text="邀请成员一起记,共用一个独立账本"
+                android:textColor="@color/white"
+                android:textSize="@dimen/context_text" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/link_add"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/bg_mine_press"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp">
+
+            <com.yiqiji.money.modules.common.view.CircleImageView
+                android:id="@+id/image_head"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin_left_15"
+                android:src="@drawable/send_link" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin_left_15"
+                android:layout_toRightOf="@+id/image_head"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="通过微信,QQ邀请"
+                    android:textColor="@color/context_color"
+                    android:textSize="@dimen/context_text" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/margin_left_15"
+                    android:text="成员通过链接登录，一起来记账"
+                    android:textColor="@color/secondary_text"
+                    android:textSize="@dimen/text_13" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="@dimen/list_item_right_image_height"
+                android:layout_height="@dimen/list_item_right_image_height"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/margin_left_15"
+                android:src="@drawable/arrow" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/phone_contant"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="@dimen/margin_left_15"
+            android:background="@drawable/bg_mine_press"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:visibility="gone">
+
+            <com.yiqiji.money.modules.common.view.CircleImageView
+                android:id="@+id/contant_head"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin_left_15"
+                android:src="@drawable/mail_list" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin_left_10"
+                android:layout_toRightOf="@+id/contant_head"
+                android:text="通讯录添加"
+                android:textColor="@color/context_color"
+                android:textSize="@dimen/context_text" />
+
+            <ImageView
+                android:layout_width="@dimen/list_item_right_image_height"
+                android:layout_height="@dimen/list_item_right_image_height"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/margin_left_15"
+                android:src="@drawable/arrow" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/manually_add"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="@dimen/margin_left_15"
+            android:background="@drawable/bg_mine_press"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp">
+
+            <com.yiqiji.money.modules.common.view.CircleImageView
+                android:id="@+id/manually_head"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin_left_15"
+                android:src="@drawable/add_manual" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin_left_15"
+                android:layout_toRightOf="@+id/manually_head"
+                android:text="手动添加"
+                android:textColor="@color/context_color"
+                android:textSize="@dimen/context_text" />
+
+            <ImageView
+                android:layout_width="@dimen/list_item_right_image_height"
+                android:layout_height="@dimen/list_item_right_image_height"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/margin_left_15"
+                android:src="@drawable/arrow" />
+        </RelativeLayout>
+
+        <include layout="@layout/item_split_line_margin_pesent_three" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_left_10"
+            android:gravity="center_horizontal"
+            android:padding="@dimen/margin_left_15"
+            android:text="让好友扫二维码加入"
+            android:textColor="@color/context_color"
+            android:textSize="@dimen/context_text" />
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:padding="@dimen/margin_left_15"
+            android:text="二维码一周内有效"
+            android:textColor="@color/secondary_text"
+            android:textSize="@dimen/text_13" />
+    </LinearLayout>
+
+</LinearLayout>

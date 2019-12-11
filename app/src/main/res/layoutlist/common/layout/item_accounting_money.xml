@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_details_money"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:id="@+id/icon_accounting"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:layout_marginLeft="17dp"
+        android:background="@drawable/write_default_icon"
+        android:gravity="center"
+        android:padding="8dp" />
+
+
+    <TextView
+        android:id="@+id/name_accounting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/margin_left_15"
+        android:layout_toRightOf="@id/icon_accounting"
+        android:gravity="center"
+        android:text="类别"
+        android:textColor="@color/context_color"
+        android:textSize="@dimen/text_16" />
+
+    <TextView
+        android:id="@+id/tv_details_money"
+        android:layout_width="wrap_content"
+        android:layout_height="65dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/margin_left_15"
+        android:gravity="center"
+        android:text="0.00"
+        android:textColor="@color/context_color"
+        android:textSize="@dimen/text_22" />
+
+    <TextView
+        android:id="@+id/tv_details_money_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="65dp"
+        android:layout_toLeftOf="@id/tv_details_money"
+        android:gravity="center"
+        android:text="￥"
+        android:textColor="@color/context_color"
+        android:textSize="@dimen/text_22" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/tv_details_money"
+        android:layout_marginLeft="@dimen/margin_left_15"
+        android:layout_marginRight="@dimen/margin_left_15"
+        android:layout_gravity="center_vertical"
+        android:background="@color/split_line"></View>
+</RelativeLayout>

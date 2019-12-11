@@ -1,0 +1,47 @@
+<resources>
+
+    <color name="clickable_press">#ffd5d5d5</color>
+    <color name="clickable_normal">#ffffffff</color>
+    <color name="bg_color">#f5f5f5</color>
+    <color name="color_write">#ffffff</color>
+    <color name="color_black">#000000</color>
+    <color name="color_white">#fffffffe</color>
+    <color name="color_black_fix">#000001</color>
+
+
+    <color name="text_color_dark_gary">#333333</color>
+    <color name="text_color_normal_gary">#666666</color>
+
+    <color name="color_c1">#f1f1f1</color>
+    <color name="color_c2">#eeeeee</color>
+    <color name="color_c3">#dedede</color>
+    <color name="color_c4">#cecece</color>
+    <color name="color_c5">#9b9b9b</color>
+    <color name="color_c6">#646464</color>
+    <color name="color_c7">#383838</color>
+    <color name="color_c8">#ff6c6c</color>
+    <color name="color_c9">#cc3333</color>
+    <color name="color_c10">#e79e99</color>
+    <color name="color_c11">#ffe8e7</color>
+    <color name="color_c12">#ffffff</color>
+    <color name="color_c13">#000000</color>
+    <color name="color_c14">#960000</color>
+    <color name="color_c15">#f8f8f8</color>
+    <color name="color_c16">#c4c4c4</color>
+    <color name="color_c17">#252525</color>
+    <color name="color_c18">#e8e8e8</color>
+    <color name="color_c19">#e11c00</color>
+    <color name="color_c20">#1f1f1f</color>
+    <color name="color_c21">#f28f25</color>
+    <color name="color_c22">#60BC22</color>
+    <color name="color_c23">#5474af</color>
+
+    <color name="green">#32b16c</color>
+    <color name="gray">#bec0bf</color>
+    <!-- 导航 标题文字 -->
+    <color name="context_color_ui">#333333</color>
+    <!--文本文字-->
+    <color name="context_secend_color_ui">#4a4a4a</color>
+    <!--与首页蓝色一样，单独用于登录模块-->
+    <color name="blue_button_login_ui">#498be7</color>
+</resources>

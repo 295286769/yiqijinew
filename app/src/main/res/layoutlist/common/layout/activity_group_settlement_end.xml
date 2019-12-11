@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.yiqiji.money.modules.common.view.CircleImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:src="@drawable/no_counter_data" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="请确认已完成"
+                android:textColor="@color/secondary_text"
+                android:textSize="@dimen/text_20" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="线下清账"
+                android:textColor="@color/secondary_text"
+                android:textSize="@dimen/text_20" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_left_10"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="结算"
+                android:textColor="@color/secondary_text"
+                android:textSize="@dimen/text_20" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="不可撤销,"
+                android:textColor="@color/secondary_text"
+                android:textSize="@dimen/text_20" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_left_10"
+                android:text="请谨慎操作!"
+                android:textColor="@color/secondary_text"
+                android:textSize="@dimen/text_20" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- <TextView
+         android:id="@+id/settlement_go"
+         android:layout_width="match_parent"
+         android:layout_height="@dimen/button_height"
+         android:layout_above="@+id/temporary"
+         android:layout_margin="@dimen/margin_left_15"
+         android:background="@drawable/edit_book_return"
+         android:gravity="center"
+         android:text="继续结算"
+         android:textColor="@color/white"
+         android:textSize="@dimen/context_text" />
+
+     <TextView
+         android:id="@+id/temporary"
+         android:layout_width="match_parent"
+         android:layout_height="@dimen/button_height"
+         android:layout_alignParentBottom="true"
+         android:layout_centerHorizontal="true"
+         android:layout_marginBottom="10dp"
+         android:layout_marginLeft="@dimen/margin_left_15"
+         android:layout_marginRight="@dimen/margin_left_15"
+         android:background="@drawable/main_back_color_button"
+         android:gravity="center"
+         android:text="暂不结算"
+         android:textColor="@color/main_back" />-->
+    <include
+        android:id="@+id/bottom_button"
+        layout="@layout/activity_bottom_two_buttom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+
+
+</RelativeLayout>

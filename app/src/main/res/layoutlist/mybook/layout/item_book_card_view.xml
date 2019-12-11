@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto">
+
+    <com.yiqiji.money.modules.book.view.AdvancedCardView
+        android:id="@+id/book_card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        card_view:cardCornerRadius="8dp"
+        card_view:cardPreventCornerOverlap="false"
+        card_view:cardUseCompatPadding="true"
+        card_view:height_width_ratio="1.3">
+
+        <ImageView
+            android:id="@+id/image_bookCover"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/book_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="@dimen/context_text"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/tv_book_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="#80333333"
+                android:gravity="center"
+                android:padding="4dp"
+                android:singleLine="true"
+                android:text="123"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+
+    </com.yiqiji.money.modules.book.view.AdvancedCardView>
+</merge>

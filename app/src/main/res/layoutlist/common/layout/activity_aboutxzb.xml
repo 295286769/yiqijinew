@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/activity_title_layout" />
+
+    <include layout="@layout/item_split_line" />
+
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/version_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="45dp"
+        android:layout_marginTop="@dimen/margin_left_15"
+        android:text="一起记"
+        android:textColor="@color/context_color"
+        android:textSize="@dimen/text_14" />
+
+    <include layout="@layout/item_split_line_margin" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/margin_left_15"
+        android:paddingRight="@dimen/margin_left_15">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="商务合作邮箱"
+            android:textColor="@color/context_color"
+            android:textSize="@dimen/context_text" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="jinlijian1127@gmail.com"
+            android:textColor="@color/secondary_text"
+
+            android:textSize="@dimen/context_text" />
+
+    </RelativeLayout>
+
+    <include layout="@layout/item_split_line_margin" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/margin_left_15"
+        android:paddingRight="@dimen/margin_left_15">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="电话"
+            android:textColor="@color/context_color"
+            android:textSize="@dimen/context_text" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="17612124898"
+            android:textColor="@color/secondary_text"
+            android:textSize="@dimen/context_text" />
+
+    </RelativeLayout>
+
+    <include layout="@layout/item_split_line_margin" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/margin_left_15"
+        android:paddingRight="@dimen/margin_left_15">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="QQ群:"
+            android:textColor="@color/context_color"
+            android:textSize="@dimen/context_text" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="495157593"
+            android:textColor="@color/secondary_text"
+            android:textSize="@dimen/context_text" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_color"
+        android:paddingBottom="25dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/compeney"
+            android:layout_centerHorizontal="true"
+            android:text="Copyright @ 2015 - 2017"
+            android:textColor="@color/about_compeney_color"
+            android:textSize="@dimen/text_12" />
+
+        <TextView
+            android:id="@+id/compeney"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="上海纷泰科技有限公司 沪ICP备16053098"
+            android:textColor="@color/about_compeney_color"
+            android:textSize="@dimen/text_12" />
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/about"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+
+</LinearLayout>

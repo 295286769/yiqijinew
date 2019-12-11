@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/title_members"
+        layout="@layout/activity_title_layout" />
+
+    <View
+        android:id="@+id/members_view"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/title_members"
+        android:background="@color/module_line" />
+
+    <LinearLayout
+        android:id="@+id/layout_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottom_button"
+        android:layout_below="@id/members_view"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/module_line_new"
+            android:paddingBottom="5dp"
+            android:paddingLeft="@dimen/margin_left_15"
+            android:paddingTop="5dp"
+            android:text="结算币种：人民币"
+            android:textColor="@color/secondary_text"
+            android:textSize="@dimen/secondary_text_size" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="true"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.yiqiji.money.modules.common.view.MyRecyclerView
+                    android:id="@+id/list_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:fadingEdge="none"
+                    android:overScrollMode="never"
+                    android:scrollbars="none" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/list_view"
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/module_line_new"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="为您推荐结算方案,仅供参考"
+                    android:textColor="@color/secondary_text"
+                    android:textSize="@dimen/secondary_text_size" />
+            </LinearLayout>
+
+
+        </ScrollView>
+
+
+    </LinearLayout>
+
+    <include
+        android:id="@+id/bottom_button"
+        layout="@layout/activity_bottom_two_button_bagroun"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+
+    <!--<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/margin_left_10"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/share_button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/pingding_5"
+            android:layout_weight="1"
+            android:background="@drawable/main_back_color_button"
+            android:gravity="center"
+            android:text="分享"
+            android:textColor="@color/main_back"
+            android:textSize="@dimen/context_text" />
+
+        <TextView
+            android:id="@+id/settlement_button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/pingding_5"
+            android:layout_weight="1"
+            android:background="@drawable/edit_book_return"
+            android:gravity="center"
+            android:text="我要结算"
+            android:textColor="@color/white"
+            android:textSize="@dimen/context_text" />
+    </LinearLayout>-->
+
+    <include
+        android:id="@+id/not_data"
+        layout="@layout/note_data_base"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/layout_piding"
+        android:visibility="invisible" />
+
+</RelativeLayout>

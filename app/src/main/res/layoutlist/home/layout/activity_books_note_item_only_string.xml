@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/button_height"
+        android:background="@drawable/list_note_bagroud"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/margin_left_15"
+        android:paddingRight="@dimen/margin_left_15">
+
+
+        <TextView
+            android:id="@+id/textview_content"
+            style="@style/title_list_item"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/notes_image"
+            android:text="我要结算" />
+
+
+    </RelativeLayout>
+
+    <include layout="@layout/item_split_line_margin" />
+</LinearLayout>

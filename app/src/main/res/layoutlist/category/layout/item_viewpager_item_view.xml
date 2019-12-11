@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.yiqiji.money.modules.book.bookcategory.view.FixHeightGridView
+        android:id="@+id/gridView_viewpager_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="5"
+        android:gravity="center"
+     >
+    </com.yiqiji.money.modules.book.bookcategory.view.FixHeightGridView>
+</LinearLayout>

@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/relayout_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_selecter_white_darkwhite"
+        android:descendantFocusability="afterDescendants"
+        android:gravity="center_vertical"
+        android:paddingBottom="@dimen/margin_left_10"
+        android:paddingLeft="@dimen/margin_left_15"
+        android:paddingRight="@dimen/margin_left_15">
+
+        <TextView
+            android:id="@+id/journal_text"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_left_10"
+            android:background="@drawable/journal_bagroud"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="日志"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_11"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/bill_image"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="@dimen/pingding_5" />
+
+        <LinearLayout
+            android:id="@+id/right_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="8dp"
+            android:gravity="right|end"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/blance"
+                style="@style/user_name_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right" />
+
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:ellipsize="end"
+                android:gravity="right"
+                android:maxLength="20"
+                android:paddingTop="@dimen/pingding_5"
+                android:singleLine="true"
+                android:textColor="@color/secondary_text"
+                android:textSize="12sp" />
+
+            <ProgressBar
+                android:id="@+id/progressBar2"
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:indeterminate="false"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/relayout"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_marginLeft="@dimen/margin_left_15"
+            android:layout_marginTop="8dp"
+            android:layout_toLeftOf="@+id/right_layout"
+            android:layout_toRightOf="@+id/bill_image"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/title_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text=""
+                android:textColor="@color/title_color"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/look_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/title_text"
+                android:layout_alignParentRight="true"
+                android:background="@color/white"
+                android:text="...全文"
+                android:textColor="@color/title_color"
+                android:textSize="15sp"
+                android:visibility="gone" />
+
+
+            <TextView
+                android:id="@+id/comment_tencont"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/title_text"
+                android:layout_below="@+id/title_text"
+                android:layout_marginTop="@dimen/pingding_5"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/context_color"
+                android:textSize="12sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/remark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/title_text"
+                android:layout_marginLeft="@dimen/margin_left_10"
+                android:layout_marginRight="@dimen/margin_left_10"
+                android:layout_toRightOf="@+id/title_text"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/secondary_text"
+                android:textSize="12sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title_text"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingTop="1dp">
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="5dp"
+                    android:textColor="#d3d3d3"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:id="@+id/not_involved"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/activity_bill_item_graybagroun"
+                    android:textColor="@color/white"
+                    android:textSize="11sp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/liquidated"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/activity_bill_item_graybagroun"
+                    android:textColor="@color/white"
+                    android:textSize="11sp"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/location_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="2dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/locationimage"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/location_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:textColor="#d3d3d3"
+                    android:textSize="11sp"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        <com.yiqiji.money.modules.common.view.SelectableRoundedImageView
+            android:id="@+id/roundedImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/relayout"
+            android:layout_below="@+id/relayout"
+            android:layout_marginTop="3dp"
+            android:scaleType="centerCrop"
+            android:visibility="gone"
+            app:sriv_left_bottom_corner_radius="5dp"
+            app:sriv_left_top_corner_radius="5dp"
+            app:sriv_right_bottom_corner_radius="5dp"
+            app:sriv_right_top_corner_radius="5dp" />
+    </RelativeLayout>
+
+</LinearLayout>

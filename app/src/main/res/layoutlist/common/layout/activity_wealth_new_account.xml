@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <!--标题-->
+    <include layout="@layout/include_common_head" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="52dp">
+
+        <ImageView
+            android:id="@+id/iv_icon"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_left_15"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_left_15"
+            android:layout_toRightOf="@+id/iv_icon"
+            android:text="现金钱包"
+            android:textColor="@color/black"
+            android:textSize="@dimen/context_text" />
+
+        <TextView
+            android:id="@+id/tv_borrowCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_left_15"
+            android:text="借记卡"
+            android:textColor="@color/black"
+            android:textSize="@dimen/context_text" />
+    </RelativeLayout>
+
+
+    <include layout="@layout/item_split_line_margin" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvMark"
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_left_15"
+            android:text="备注信息"
+            android:textColor="@color/context_color"
+            android:textSize="@dimen/context_text" />
+
+        <EditText
+            android:id="@+id/et_remarks"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/margin_left_15"
+            android:background="@null"
+            android:hint="请输入备注名"
+            android:singleLine="true"
+            android:textColor="@color/context_color"
+            android:textSize="@dimen/secondary_text_size" />
+    </LinearLayout>
+
+    <include layout="@layout/item_split_line_margin" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_left_15"
+            android:text="余额"
+            android:textColor="@color/context_color"
+            android:textSize="@dimen/context_text" />
+
+        <EditText
+            android:id="@+id/et_balance"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/margin_left_15"
+            android:background="@null"
+            android:hint="0.00"
+            android:inputType="numberDecimal"
+            android:maxLength="12"
+            android:textColor="@color/context_color"
+            android:textSize="@dimen/secondary_text_size" />
+    </LinearLayout>
+
+    <include layout="@layout/item_split_line_margin" />
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="@dimen/margin_left_15"
+        android:layout_marginRight="@dimen/margin_left_15"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_selecter_littleround_blue_darkblue"
+        android:text="保存"
+        android:textColor="@color/white"
+        android:textSize="@dimen/context_text"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/ll_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_delet"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="@dimen/margin_left_15"
+            android:layout_marginRight="@dimen/margin_left_15"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_selecter_littleround_blue_white_darkwhite"
+            android:clickable="true"
+            android:text="删除"
+            android:textColor="@color/main_back"
+            android:textSize="@dimen/context_text" />
+
+        <Button
+            android:id="@+id/btn_etSave"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="@dimen/margin_left_15"
+            android:layout_marginRight="@dimen/margin_left_15"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_selecter_littleround_blue_darkblue"
+            android:clickable="true"
+            android:text="保存"
+            android:textColor="@color/white"
+            android:textSize="@dimen/context_text" />
+
+    </LinearLayout>
+
+</LinearLayout>

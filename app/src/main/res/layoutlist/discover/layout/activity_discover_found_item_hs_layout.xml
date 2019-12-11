@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/discover_item_book_layout"
+    style="@style/discover_item_book_rootstyle"
+    android:orientation="horizontal">
+
+</LinearLayout>

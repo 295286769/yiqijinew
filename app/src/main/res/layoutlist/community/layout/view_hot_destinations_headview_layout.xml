@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:yqj="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.yiqiji.money.modules.community.travel.view.HotDestinationsHeadImageView
+            android:id="@+id/hotDestinationsHeadImageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            yqj:with_height_pesent_iamge="2.06" />
+
+        <TextView
+            android:id="@+id/tv_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_30" />
+
+        <ImageView
+            android:id="@+id/im_return"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:paddingBottom="@dimen/margin_left_15"
+            android:paddingLeft="@dimen/margin_left_20"
+            android:paddingRight="@dimen/margin_left_20"
+            android:paddingTop="@dimen/margin_left_30"
+            android:src="@drawable/back_left" />
+    </RelativeLayout>
+
+    <com.yiqiji.money.modules.community.travel.view.DestinationGuideView
+        android:id="@+id/destinationGuideView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout"
+        android:gravity="center" />
+
+
+</RelativeLayout>

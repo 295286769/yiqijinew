@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/third_login_icon"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/login_logo_icon" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:text="@string/app_name"
+        android:textColor="@color/login_logo_text"
+        android:textSize="@dimen/text_20" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/wx_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/qq_login"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/wx_login_bagroud"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/wx_icon"
+                android:drawablePadding="30dp"
+                android:text="@string/wx_text"
+                android:textColor="@color/white"
+                android:textSize="@dimen/context_text" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/qq_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/phone_login"
+
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="25dp"
+            android:layout_marginTop="@dimen/margin_left_10"
+            android:background="@drawable/qq_login_bagroud"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/qq_icon"
+                android:drawablePadding="30dp"
+                android:text="@string/qq_text"
+                android:textColor="@color/white"
+                android:textSize="@dimen/context_text" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/phone_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="50dp"
+            android:drawablePadding="5dp"
+            android:drawableRight="@drawable/right_arrow"
+            android:gravity="center"
+            android:paddingBottom="20dp"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp"
+            android:text="@string/phone_login_text"
+            android:textColor="@color/phone_login_text"
+            android:textSize="@dimen/context_text" />
+    </RelativeLayout>
+
+
+</LinearLayout>

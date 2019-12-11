@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/layout_renovation"
+        layout="@layout/activity_home_renovation_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/linealayout_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/pingding">
+
+        <LinearLayout
+            android:id="@+id/moth_residual_budget"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/bedug_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="预算剩余"
+                android:textColor="@color/home_text_color"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/yusuann"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:paddingTop="5dp"
+                android:singleLine="true"
+                android:text="设置预算"
+                android:textColor="@color/home_text_color"
+                android:textSize="@dimen/text_16" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/moth_incom"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/incom_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="本月收入"
+                android:textColor="@color/home_text_color"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/incom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:paddingTop="5dp"
+                android:singleLine="true"
+                android:text="0.00"
+                android:textColor="@color/home_text_color"
+                android:textSize="@dimen/text_16" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/moth_expense"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/expese_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="1dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="1dp"
+                android:text="本月支出"
+                android:textColor="@color/home_text_color"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/expense"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:paddingTop="2dp"
+                android:singleLine="true"
+                android:text="0.00"
+                android:textColor="@color/home_text_color"
+                android:textSize="@dimen/text_16" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

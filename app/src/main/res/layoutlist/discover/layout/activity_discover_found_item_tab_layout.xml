@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="@dimen/margin_left_15">
+
+    <com.yiqiji.money.modules.community.view.DiscoverHSItemImageView
+        android:id="@+id/image_tab_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/tv_item_tab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="10dp"
+        android:maxLength="6"
+        android:shadowColor="#878787"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="2"
+        android:text="经典七日游"
+        android:textColor="@color/white"
+        android:textSize="17dp" />
+</RelativeLayout>

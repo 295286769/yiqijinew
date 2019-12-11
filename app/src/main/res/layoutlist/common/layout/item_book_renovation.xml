@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/relayout_item"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@drawable/bg_selecter_white_darkwhite"
+        android:descendantFocusability="afterDescendants"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/margin_left_15"
+        android:paddingRight="@dimen/margin_left_15"
+        android:paddingTop="4dp">
+
+        <ImageView
+            android:id="@+id/bill_categoryImage"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/icon_106" />
+
+        <TextView
+            android:id="@+id/tv_bill_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/bill_categoryImage"
+            android:ellipsize="end"
+            android:text="团建"
+            android:textColor="@color/title_color"
+            android:textSize="15sp" />
+
+
+        <TextView
+            android:id="@+id/blance"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="right"
+            android:gravity="center_vertical"
+            android:text="10000"
+            android:textColor="@color/red" />
+
+        <TextView
+            android:id="@+id/tv_bill_remark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toLeftOf="@+id/blance"
+            android:layout_toRightOf="@+id/tv_bill_category"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="备注1打哈哈登记卡活动卡萨回到家按客户动画技术看21321321"
+            android:textColor="@color/secondary_text"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:background="@drawable/bg_selecter_white_darkwhite"
+        android:descendantFocusability="afterDescendants"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/margin_left_15"
+        android:paddingRight="@dimen/margin_left_15">
+
+        <View
+            android:id="@+id/view_placeholder"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="@dimen/pingding_5"
+            android:src="@drawable/icon_106" />
+
+        <TextView
+            android:id="@+id/stage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/view_placeholder"
+            android:paddingRight="5dp"
+            android:textColor="#d3d3d3"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/bill_notPartInSettlement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@+id/stage"
+            android:background="@drawable/activity_bill_item_graybagroun"
+            android:text="未参与"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/bill_settlementText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@+id/bill_notPartInSettlement"
+            android:background="@drawable/activity_bill_item_graybagroun"
+            android:text="已结算"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/location_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="2dp"
+            android:layout_toRightOf="@+id/bill_settlementText"
+            android:scaleType="centerInside"
+            android:src="@drawable/locationimage" />
+
+        <TextView
+            android:id="@+id/location_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/location_image"
+            android:ellipsize="end"
+            android:paddingLeft="2dp"
+            android:singleLine="true"
+            android:text="张江高科"
+            android:textColor="#d3d3d3"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/tv_partInCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right"
+            android:gravity="center_vertical"
+            android:text="2人消费"
+            android:textColor="@color/secondary_text"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rela_billImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_selecter_white_darkwhite"
+        android:descendantFocusability="afterDescendants"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/margin_left_15"
+        android:paddingRight="@dimen/margin_left_15">
+
+        <View
+            android:id="@+id/view_placeholder2"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="@dimen/pingding_5"
+            android:src="@drawable/icon_106" />
+
+        <com.yiqiji.money.modules.common.view.SelectableRoundedImageView
+            android:id="@+id/bill_image"
+            android:layout_width="120dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/view_placeholder2"
+            android:scaleType="centerCrop"
+            app:sriv_left_bottom_corner_radius="5dp"
+            app:sriv_left_top_corner_radius="5dp"
+            app:sriv_right_bottom_corner_radius="5dp"
+            app:sriv_right_top_corner_radius="5dp" />
+
+    </RelativeLayout>
+
+    <View
+        style="@style/dividing_line_style"
+        android:layout_marginTop="4dp"></View>
+
+</LinearLayout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/activity_title_layout" />
+
+    <include
+        android:id="@+id/line"
+        layout="@layout/item_split_line"
+        android:layout_width="wrap_content"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/title"></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_button"
+        android:layout_below="@+id/line"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/module_line_new"
+            android:paddingBottom="5dp"
+            android:paddingLeft="@dimen/margin_left_15"
+            android:paddingTop="5dp"
+            android:text="结算币种：人民币"
+            android:textColor="@color/secondary_text"
+            android:textSize="@dimen/secondary_text_size" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="true"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.yiqiji.money.modules.common.view.MyRecyclerView
+                    android:id="@+id/list_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/background_color"
+                    android:scrollbars="none" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/list_view"
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/module_line_new"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="为您推荐结算方案,仅供参考"
+                    android:textColor="@color/secondary_text"
+                    android:textSize="@dimen/secondary_text_size" />
+            </LinearLayout>
+
+
+        </ScrollView>
+
+    </LinearLayout>
+
+    <include
+        android:id="@+id/bottom_button"
+        layout="@layout/activity_bottom_two_buttom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+
+    <include
+        android:id="@+id/not_data"
+        layout="@layout/note_data_base"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/line"
+        android:visibility="invisible" />
+
+
+</RelativeLayout>

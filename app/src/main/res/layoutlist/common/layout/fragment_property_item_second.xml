@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/v_divider"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/split_line" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="@drawable/bg_selecter_white_darkwhite">
+
+        <ImageView
+            android:id="@+id/iv_icon"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_left_15"
+            android:scaleType="centerCrop" />
+
+        <LinearLayout
+            android:id="@+id/ll_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_left_15"
+            android:gravity="right"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_assetamount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="12312.00"
+                android:textColor="@color/context_color"
+                android:textSize="@dimen/context_text" />
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:paddingTop="4dp"
+                android:singleLine="true"
+                android:text="2016-11-11还款"
+                android:textColor="@color/secondary_text"
+                android:textSize="@dimen/secondary_text_size" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_left_10"
+            android:layout_toLeftOf="@+id/ll_money"
+            android:layout_toRightOf="@+id/iv_icon">
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="工商银行"
+                android:textColor="@color/context_color"
+                android:textSize="@dimen/context_text" />
+
+            <TextView
+                android:id="@+id/tv_mark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/tv_name"
+                android:layout_toRightOf="@+id/tv_name"
+                android:ellipsize="end"
+                android:paddingLeft="@dimen/margin_left_10"
+                android:singleLine="true"
+                android:text="信用卡1223"
+                android:textColor="@color/secondary_text"
+                android:textSize="@dimen/secondary_text_size" />
+
+            <LinearLayout
+                android:id="@+id/ll_costToday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_name"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingTop="4dp">
+
+                <TextView
+                    android:id="@+id/tv_fundTag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_bg_fund"
+                    android:text="基金"
+                    android:layout_marginRight="5dp"
+                    android:textColor="#4B93E8"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:id="@+id/tv_costTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="今日支出"
+                    android:textColor="@color/secondary_text"
+                    android:textSize="@dimen/secondary_text_size" />
+
+                <TextView
+                    android:id="@+id/tv_cost"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+
+                    android:text="86.00"
+                    android:textColor="@color/context_color"
+                    android:textSize="@dimen/secondary_text_size" />
+
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.yiqiji.money.modules.book.bookcategory.view.DragGridView
+        android:id="@+id/gridview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f0f0f0"
+        android:numColumns="4"
+        android:verticalSpacing="0.5dp"
+        android:horizontalSpacing="0.5dp">
+
+    </com.yiqiji.money.modules.book.bookcategory.view.DragGridView>
+</LinearLayout>

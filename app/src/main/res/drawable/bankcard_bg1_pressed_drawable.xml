@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <corners android:radius="5dip" />
+    <!-- <solid android:color="@color/bankcard_bg_pressed_color1" /> -->
+    <gradient
+        android:endColor="#5989bd"
+        android:gradientRadius="45"
+        android:startColor="#1853a5"
+        android:type="linear" />
+
+</shape>

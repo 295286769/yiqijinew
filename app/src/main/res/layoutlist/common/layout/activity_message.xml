@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/activity_title_layout" />
+
+    <include layout="@layout/item_split_line" />
+
+    <include
+        android:id="@+id/not_data"
+        layout="@layout/note_data_base"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_color"
+        android:orientation="vertical">
+
+        <com.yiqiji.money.modules.common.view.PullToRefreshLayout
+            android:id="@+id/refreshable_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <include layout="@layout/refresh_head" />
+
+            <com.yiqiji.money.modules.common.view.WebViewLinear
+                android:id="@+id/layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fadingEdge="none"
+                android:fillViewport="false"
+                android:orientation="vertical"
+                android:overScrollMode="never"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+
+                    <com.yiqiji.money.modules.common.view.MyRecyclerView
+                        android:id="@+id/rl_message"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fadingEdge="none"
+                        android:overScrollMode="never" />
+                </LinearLayout>
+            </com.yiqiji.money.modules.common.view.WebViewLinear>
+
+            <include layout="@layout/load_more" />
+        </com.yiqiji.money.modules.common.view.PullToRefreshLayout>
+    </LinearLayout>
+</LinearLayout>

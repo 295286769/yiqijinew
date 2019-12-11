@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent" >
+
+    <RelativeLayout
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/background_color"
+        android:padding="@dimen/margin_left_15" >
+
+        <EditText
+            android:id="@+id/content_praise"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/statistics_line_height"
+            android:background="@drawable/beauty_finance_edit"
+            android:cursorVisible="true"
+            android:gravity="top"
+            android:hint="说两句吧..."
+            android:maxLength="120"
+            android:padding="@dimen/margin_left_10"
+            android:textColor="@color/context_color"
+            android:textColorHint="@color/secondary_text"
+            android:textCursorDrawable="@drawable/edit_cursor_bg"
+            android:textSize="@dimen/text_13" />
+
+        <TextView
+            android:id="@+id/publish_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/content_praise"
+            android:layout_marginTop="@dimen/pingding_5"
+            android:background="@drawable/publish_button"
+            android:paddingBottom="@dimen/pingding_5"
+            android:paddingLeft="@dimen/margin_left_10"
+            android:paddingRight="@dimen/margin_left_10"
+            android:paddingTop="@dimen/pingding_5"
+            android:text="提交"
+            android:textColor="@color/main_back" />
+    </RelativeLayout>
+
+</RelativeLayout>

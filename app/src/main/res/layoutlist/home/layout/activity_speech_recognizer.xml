@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ripple="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/voice_bg">
+
+    <TextView
+        android:id="@+id/tv_pressSay"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:background="@drawable/bg_selecter_littleround_blue_darkblue"
+        android:gravity="center"
+        android:text="按住说话"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tv_explain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tv_pressSay"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="25dp"
+        android:layout_marginTop="10dp"
+        android:background="#605F5F"
+        android:padding="2dp"
+        android:text="手指上滑，取消记账"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:visibility="invisible" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/tv_explain"
+        android:orientation="vertical">
+
+        <!--标题-->
+        <RelativeLayout
+            android:id="@+id/rl_head"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/titlebar_height"
+            android:layout_marginTop="@dimen/state_bar_height_25">
+
+            <ImageView
+                android:id="@+id/iv_cancle"
+                style="@style/title_get_back"
+                android:src="@drawable/icon_wcancle" />
+
+            <ImageView
+                android:id="@+id/iv_signOne"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:paddingBottom="10dp"
+                android:paddingLeft="30dp"
+                android:paddingRight="@dimen/margin_left_15"
+                android:paddingTop="10dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/icon_feather" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_lisState"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="37dp"
+            android:layout_marginTop="27dp"
+            android:text="按住说话 松开记账"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+
+            <com.yiqiji.money.modules.common.control.RippleBackground
+                android:id="@+id/ripple_bg"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                ripple:rb_color="@color/main_back"
+                ripple:rb_duration="3000"
+                ripple:rb_radius="49dp"
+                ripple:rb_rippleAmount="5"
+                ripple:rb_scale="2.1"
+                ripple:rb_strokeWidth="32dp"
+                ripple:rb_type="fillRipple" />
+
+            <ImageView
+                android:id="@+id/iv_voice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/icon_voice" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="72dp"
+            android:gravity="center"
+            android:lineSpacingExtra="2dp"
+            android:text="你可以这样记录你的账单:\n吃饭30元\n打车18元\n购物消费600元"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

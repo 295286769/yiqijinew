@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <include layout="@layout/activity_title_layout" />
+
+    <include layout="@layout/item_split_line" />
+
+    <RelativeLayout
+        android:id="@+id/album_title_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/titlebar_height"
+        android:background="#ffffff"
+        android:gravity="top"
+        android:visibility="gone">
+
+        <com.yiqiji.money.modules.common.widget.FilterImageView
+            android:id="@+id/album_back"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:paddingLeft="@dimen/calendar_back_piddingleft"
+            android:paddingRight="@dimen/calendar_back_piddingright"
+            android:scaleType="fitCenter"
+            android:src="@drawable/left_arro" />
+
+        <TextView
+            android:id="@+id/album_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/calendar_back_piddingleft"
+            android:layout_marginRight="@dimen/calendar_back_piddingright"
+            android:ellipsize="middle"
+            android:maxLength="12"
+            android:singleLine="true"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/text_16" />
+
+        <TextView
+            android:id="@+id/album_finish"
+            android:layout_width="wrap_content"
+            android:layout_height="30dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/calendar_back_piddingleft"
+            android:enabled="true"
+            android:gravity="center"
+            android:minWidth="50dip"
+            android:text="完成"
+            android:textColor="#ffffff" />
+    </RelativeLayout>
+
+    <View
+        style="@style/dividing_line_style"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/module_line"
+        android:orientation="vertical">
+
+        <GridView
+            android:id="@+id/gridview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="@dimen/margin_left_10"
+            android:layout_marginRight="@dimen/margin_right_10"
+            android:horizontalSpacing="7.5dip"
+            android:numColumns="3"
+            android:verticalSpacing="7.5dip" />
+
+        <FrameLayout
+            android:id="@+id/pagerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+
+            <com.yiqiji.money.modules.common.widget.AlbumViewPager
+                android:id="@+id/albumviewpager"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@color/background_color" />
+
+            <RelativeLayout
+                android:id="@+id/album_item_header_bar"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/titlebar_height"
+                android:background="@color/title_color">
+
+                <ImageView
+                    android:id="@+id/header_bar_photo_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentLeft="true"
+                    android:paddingLeft="@dimen/calendar_back_piddingleft"
+                    android:paddingRight="5.0dip"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/left_arro" />
+
+                <TextView
+                    android:id="@+id/header_bar_photo_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_toRightOf="@id/header_bar_photo_back"
+                    android:gravity="center"
+                    android:paddingLeft="20dip"
+                    android:paddingRight="@dimen/calendar_back_piddingleft"
+                    android:singleLine="true"
+                    android:textColor="@color/text_color"
+                    android:textSize="22.0sp" />
+
+                <TextView
+                    android:id="@+id/header_finish"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/calendar_back_piddingleft"
+                    android:enabled="true"
+                    android:gravity="center"
+                    android:minWidth="50dip"
+                    android:text="完成"
+                    android:textColor="#ffffff" />
+
+                <CheckBox
+                    android:id="@+id/checkbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/calendar_back_piddingleft"
+                    android:layout_toLeftOf="@id/header_finish"
+                    android:button="@null"
+                    android:checked="false"
+                    android:focusable="false" />
+            </RelativeLayout>
+        </FrameLayout>
+    </LinearLayout>
+
+</LinearLayout>

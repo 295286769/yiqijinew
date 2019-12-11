@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FEFFFF"
+    android:orientation="vertical">
+
+    <com.yiqiji.money.modules.Found.view.BaseWebView
+        android:id="@+id/wb_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="16dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/split_line"
+        android:layout_marginLeft="10dp"/>
+
+
+    <TextView
+        android:id="@+id/tv_commentNm"
+        android:layout_width="match_parent"
+        android:background="#FEFFFF"
+        android:layout_height="wrap_content"
+        android:paddingBottom="16dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="17dp"
+        android:singleLine="true"
+        android:text="评论 (3)"
+        android:textColor="@color/secondary_text"
+        android:textSize="12sp" />
+
+</LinearLayout>

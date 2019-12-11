@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fl_details"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_back"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white" >
+
+        <View
+            android:id="@+id/wealth_view"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:background="@color/main_back" />
+
+        <LinearLayout
+            android:id="@+id/ll_radiogroup"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/titlebar_height"
+            android:layout_below="@id/wealth_view"
+            android:background="@color/main_back"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <RadioGroup
+                android:id="@+id/radio_group_wealth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/expenditure_income_button_back_ground"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/rb_wealth_assets"
+                    android:layout_width="80dp"
+                    android:layout_height="25dp"
+                    android:background="@drawable/expenditure_income_button_select"
+                    android:button="@null"
+                    android:checked="true"
+                    android:gravity="center"
+                    android:text="资产"
+                    android:textColor="@color/expenses_incom_button_text_color" />
+
+                <RadioButton
+                    android:id="@+id/rb_wealth_optional"
+                    android:layout_width="80dp"
+                    android:layout_height="25dp"
+                    android:background="@drawable/expenditure_income_select_right"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="自选"
+                    android:textColor="@color/expenses_incom_button_text_color" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/fragment_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/ll_radiogroup" >
+        </FrameLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:id="@+id/rl_book_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       
+        android:layout_marginLeft="@dimen/margin_left_15"
+        android:layout_marginRight="@dimen/margin_left_15"
+        android:background="@drawable/book_fragment_background" >
+
+        <ImageView
+            android:id="@+id/iv_book_item_icon"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_left_15"
+            android:background="@drawable/book_fragment_item_iamge"
+            android:scaleType="fitXY"
+            android:src="@drawable/book_my" />
+
+        <TextView
+            android:id="@+id/tv_book_item_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_left_10"
+            android:layout_toRightOf="@id/iv_book_item_icon"
+            android:padding="10dp"
+            android:text="日常账本" />
+
+        <TextView
+            android:id="@+id/tv_book_item_describe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/tv_book_item_title"
+            android:layout_below="@id/tv_book_item_title"
+            android:padding="10dp"
+            android:text="记账，我比以前更爱生活" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="40dp"
+            android:text="添加" />
+
+        <ImageView
+            android:id="@+id/arrow"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_left_15"
+            android:src="@drawable/arrow" >
+        </ImageView>
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/book_view"
+        android:layout_below="@id/rl_book_item"
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+</RelativeLayout>

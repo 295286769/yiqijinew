@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/activity_title_layout" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/list_no_son_item_height"
+        android:background="@color/module_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_color"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/edit_budget"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height"
+            android:background="@color/white"
+            android:inputType="numberDecimal"
+            android:padding="@dimen/margin_left_10"
+            android:textColor="@color/context_color"
+            android:textColorHint="@color/secondary_text"
+            android:textSize="@dimen/context_text" />
+
+        <TextView
+            android:id="@+id/add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_left_15"
+            android:background="@drawable/bg_selecter_littleround_blue_darkblue"
+            android:gravity="center"
+            android:paddingBottom="@dimen/margin_left_15"
+            android:paddingTop="@dimen/margin_left_15"
+            android:text="确定"
+            android:textColor="@color/white"
+            android:textSize="@dimen/context_text" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/activity_title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <include
+        android:id="@+id/line"
+        layout="@layout/item_split_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/title" />
+
+    <include
+        android:id="@+id/bottom_button"
+        layout="@layout/activity_bottom_two_buttom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+
+    <com.yiqiji.money.modules.common.view.FixScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_button"
+        android:layout_below="@+id/line"
+        android:background="@color/navigator_trans_hint"
+        android:fadingEdge="none"
+        android:fillViewport="true"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/background_color"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <include
+                    android:id="@+id/layout_item"
+                    layout="@layout/activity_bill_item" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/layout_visible"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/custodian"
+                    style="@style/user_name_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/module_line_new"
+                    android:drawableLeft="@drawable/participant"
+                    android:drawablePadding="@dimen/pingding_5"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="@dimen/pingding_5"
+                    android:paddingLeft="@dimen/margin_left_15"
+                    android:paddingTop="@dimen/pingding_5"
+                    android:text="付款人&#160;(1)" />
+
+                <LinearLayout
+                    android:id="@+id/layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0.5dp"
+                    android:background="@color/white"
+                    android:orientation="vertical"></LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/payment"
+                    style="@style/user_name_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/module_line_new"
+                    android:drawableLeft="@drawable/drawee"
+                    android:drawablePadding="@dimen/pingding_5"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="@dimen/pingding_5"
+                    android:paddingLeft="@dimen/margin_left_15"
+                    android:paddingTop="@dimen/pingding_5"
+                    android:text="参与人&#160;(1)" />
+
+                <com.yiqiji.money.modules.common.view.MyRecyclerView
+                    android:id="@+id/list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fadingEdge="none"
+                    android:overScrollMode="never"
+                    android:scrollbars="none" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/operator"
+                style="@style/text_light_centent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_left_10"
+                android:layout_marginTop="@dimen/margin_left_20"
+                android:text="操作人" />
+
+            <TextView
+                android:id="@+id/time"
+                style="@style/text_light_centent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_left_10"
+                android:layout_marginTop="@dimen/margin_left_10"
+                android:text="结算时间" />
+
+            <TextView
+                android:id="@+id/te"
+                style="@style/text_light_centent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_left_10"
+                android:layout_marginTop="@dimen/margin_left_10"
+                android:text="仅账单创建者才能进行删除和修改"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/rela"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_left_10">
+
+                <TextView
+                    style="@style/text_light_centent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_left_10"
+                    android:drawableLeft="@drawable/comment_diary"
+                    android:drawablePadding="@dimen/pingding_5"
+                    android:text="大家的评论" />
+
+                <TextView
+                    android:id="@+id/write"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/margin_left_10"
+                    android:text="写评论"
+                    android:textColor="@color/main_back"
+                    android:textSize="@dimen/context_text" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/comm_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include
+                    android:id="@+id/not_comment"
+                    layout="@layout/not_date_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center" />
+
+                <LinearLayout
+                    android:id="@+id/layout_clickreview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_left_15"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <TextView
+                        style="@style/text_gray"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_left_10"
+                        android:text="还没有评论," />
+
+                    <TextView
+                        android:id="@+id/clickreview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/margin_left_10"
+                        android:text="点击评论"
+                        android:textColor="@color/main_back"
+                        android:textSize="@dimen/context_text" />
+                </LinearLayout>
+
+                <com.yiqiji.money.modules.common.view.MyRecyclerView
+                    android:id="@+id/list_clickreview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fadingEdge="none"
+                    android:overScrollMode="never"
+                    android:scrollbars="none" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.yiqiji.money.modules.common.view.FixScrollView>
+
+
+    <include
+        android:id="@+id/layout_first_gon"
+        layout="@layout/note_data_base"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/line"
+        android:visibility="invisible" />
+
+
+</RelativeLayout>

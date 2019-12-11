@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:yqj="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    android:orientation="vertical">
+
+    <com.yiqiji.frame.ui.wigit.BaseTitleLayout
+        android:id="@+id/title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_left_10"
+        android:background="@color/split_line" />
+
+    <com.yiqiji.money.modules.common.view.SelectLocationView
+        android:id="@+id/selectLocationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        yqj:address_init_text="请选择"
+        yqj:select_text="@string/location_text" />
+
+    <RelativeLayout
+        android:id="@+id/villageName"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height"
+        android:background="@drawable/bg_mine_press"
+        android:paddingRight="@dimen/margin_left_15">
+
+        <TextView
+            android:id="@+id/leftText"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_left_15"
+            android:gravity="right"
+            android:text="@string/location_name"
+            android:textColor="@color/context_color"
+            android:textSize="@dimen/context_text" />
+
+        <EditText
+            android:id="@+id/edRightText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_left_10"
+            android:layout_toRightOf="@+id/leftText"
+            android:background="@color/white"
+            android:hint="@string/location_hint"
+            android:paddingLeft="@dimen/margin_left_15"
+            android:textColor="@color/secondary_text"
+            android:textSize="@dimen/secondary_text_size" />
+
+
+    </RelativeLayout>
+
+    <include layout="@layout/item_split_line_pesent_magin_five" />
+
+    <RelativeLayout
+        android:id="@+id/housingArea"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height"
+        android:background="@drawable/bg_mine_press"
+        android:paddingRight="@dimen/margin_left_15">
+
+        <TextView
+            android:id="@+id/tv_area_leftText"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_left_15"
+            android:gravity="right"
+            android:text="@string/house_area"
+            android:textColor="@color/context_color"
+            android:textSize="@dimen/context_text" />
+
+        <EditText
+            android:id="@+id/tv_area_rightText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_left_10"
+            android:layout_toLeftOf="@+id/tv_area_mi"
+            android:layout_toRightOf="@+id/tv_area_leftText"
+            android:background="@color/white"
+            android:hint="@string/house_area_hint"
+            android:inputType="numberDecimal"
+            android:paddingLeft="@dimen/margin_left_15"
+            android:paddingRight="@dimen/margin_left_10"
+            android:textColor="@color/secondary_text"
+            android:textSize="@dimen/secondary_text_size" />
+
+        <TextView
+            android:id="@+id/tv_area_mi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:hint="@string/house_mi"
+            android:paddingLeft="@dimen/margin_left_15"
+            android:textColor="@color/secondary_text"
+            android:textSize="@dimen/secondary_text_size" />
+
+    </RelativeLayout>
+
+    <include layout="@layout/item_split_line_pesent_magin_five" />
+
+    <com.yiqiji.money.modules.common.view.SelectLocationView
+        android:id="@+id/houseSelectLocationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        yqj:select_text="@string/house_styple" />
+
+    <com.yiqiji.money.modules.common.view.SelectLocationView
+        android:id="@+id/decorationStyleSelectLocationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        yqj:select_text="@string/decoration_stype" />
+
+    <com.yiqiji.money.modules.common.view.SelectLocationView
+        android:id="@+id/styleSelectLocationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        yqj:select_text="@string/style" />
+
+    <RelativeLayout
+        android:id="@+id/rtCompanyLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height"
+        android:background="@drawable/bg_mine_press"
+        android:paddingRight="@dimen/margin_left_15">
+
+        <TextView
+            android:id="@+id/tvCompanyLeftText"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_left_15"
+            android:gravity="right"
+            android:text="@string/decoration_company_name"
+            android:textColor="@color/context_color"
+            android:textSize="@dimen/context_text" />
+
+        <EditText
+            android:id="@+id/tvCompanyRightText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_left_10"
+            android:layout_toRightOf="@+id/tvCompanyLeftText"
+            android:background="@color/white"
+            android:hint="@string/decoration_company_hint"
+            android:paddingLeft="@dimen/margin_left_15"
+            android:textColor="@color/secondary_text"
+            android:textSize="@dimen/secondary_text_size" />
+
+
+    </RelativeLayout>
+
+    <include layout="@layout/item_split_line_pesent_magin_five" />
+
+</LinearLayout>

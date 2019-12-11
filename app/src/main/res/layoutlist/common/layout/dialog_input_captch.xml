@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/dialog_text_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/new_text_color_1"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/subbar_height"
+        android:layout_marginBottom="20dip"
+        android:layout_marginTop="20dip" >
+
+        <EditText
+            android:id="@+id/input_info"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dip"
+            android:layout_marginRight="15dip"
+            android:layout_weight="1"
+            android:background="@drawable/btn_stroke_drawable"
+            android:gravity="center_vertical"
+            android:hint="请输入验证码"
+            android:inputType="textPassword"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:textColor="@color/new_text_color_1"
+            android:textColorHint="@color/new_text_color_3"
+            android:textCursorDrawable="@drawable/edit_cursor_bg"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/captchcode"
+            android:layout_width="72dip"
+            android:layout_height="match_parent"
+            android:background="@color/whitesmoke"
+            android:contentDescription="@null" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.75dp"
+        android:layout_marginTop="15dp"
+        android:alpha="0.3"
+        android:background="@color/black" />
+
+    <Button
+        android:id="@+id/exit_oks"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/subbar_height"
+        android:background="@color/white"
+        android:textColor="@color/title_color" />
+
+</LinearLayout>

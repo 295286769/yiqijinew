@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/bt_error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/add_book_confirm"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="重新加载"
+        android:textColor="@color/main_back"
+        android:textSize="@dimen/context_text" />
+
+</LinearLayout>

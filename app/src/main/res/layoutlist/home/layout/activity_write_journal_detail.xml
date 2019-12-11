@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/activity_title_layout" />
+
+    <include layout="@layout/item_split_line" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <include
+            android:id="@+id/list"
+            layout="@layout/recylerview_layou"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/bottom_button" />
+
+        <include
+            android:id="@+id/bottom_button"
+            layout="@layout/activity_bottom_two_buttom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:visibility="gone" />
+
+        <include
+            android:id="@+id/no_data"
+            layout="@layout/note_data_base"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+
+</LinearLayout>

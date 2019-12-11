@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yiqiji.money.modules.book.detailinfo.view.KeyboardPopupObserveLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true">
+
+    <RelativeLayout
+        android:id="@+id/rela_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/rl_view_title"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/iv_details_return"
+            style="@style/title_get_back" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="暂无评论"
+            android:textSize="17dp" />
+
+    </RelativeLayout>
+
+    <com.yiqiji.money.modules.book.detailinfo.view.CommentEdiTextView
+        android:id="@+id/commentEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+    </com.yiqiji.money.modules.book.detailinfo.view.CommentEdiTextView>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/ryv_book_comment_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/commentEdit"
+        android:layout_below="@+id/rela_title"
+        android:background="@color/white">
+    </android.support.v7.widget.RecyclerView>
+
+</com.yiqiji.money.modules.book.detailinfo.view.KeyboardPopupObserveLayout>

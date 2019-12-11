@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rlExportDt"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height"
+        android:background="@drawable/bg_mine_press">
+
+        <TextView
+            android:id="@+id/leftText"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_left_15"
+            android:gravity="right"
+            android:text=""
+            android:textColor="@color/context_color"
+            android:textSize="@dimen/context_text" />
+
+        <TextView
+            android:id="@+id/rightText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_left_10"
+            android:layout_toLeftOf="@+id/arrowImage"
+            android:layout_toRightOf="@+id/leftText"
+            android:gravity="right"
+            android:paddingLeft="@dimen/margin_left_15"
+            android:text=""
+            android:textColor="@color/secondary_text"
+            android:textSize="@dimen/secondary_text_size" />
+
+        <ImageView
+            android:id="@+id/arrowImage"
+            android:layout_width="@dimen/size_image_18"
+            android:layout_height="@dimen/size_image_18"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_left_15"
+            android:src="@drawable/arrow" />
+
+    </RelativeLayout>
+
+    <include layout="@layout/item_split_line_pesent_magin_five" />
+
+</LinearLayout>

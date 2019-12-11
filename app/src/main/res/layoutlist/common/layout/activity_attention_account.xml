@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <include
+        android:id="@+id/inc_head"
+        layout="@layout/include_common_head" />
+
+    <TextView
+        android:id="@+id/tv_attNm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/inc_head"
+        android:background="#F5F9FC"
+        android:paddingBottom="5dp"
+        android:paddingLeft="@dimen/margin_left_13"
+        android:paddingTop="5dp"
+        android:text="已订阅0个账本"
+        android:textColor="@color/secondary_text"
+        android:textSize="@dimen/secondary_text_size" />
+
+
+    <GridView
+        android:id="@+id/gridView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tv_attNm"
+        android:layout_gravity="center"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:horizontalSpacing="12dp"
+        android:numColumns="3"
+        android:scrollbars="none"
+        android:verticalSpacing="10dp" />
+
+    <LinearLayout
+        android:id="@+id/ll_noData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:src="@drawable/icon_noattbook" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:text="您暂无订阅的账本"
+            android:textColor="@color/secondary_text"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

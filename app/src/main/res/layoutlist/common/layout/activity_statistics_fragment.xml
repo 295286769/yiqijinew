@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fadingEdge="none"
+        android:fillViewport="true"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/notime_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white">
+
+                    <TextView
+                        android:id="@+id/moth_expese_incom"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:padding="@dimen/margin_left_15"
+                        android:text="@string/moths_expese"
+                        android:textColor="@color/context_color"
+                        android:textSize="@dimen/context_text" />
+
+                    <TextView
+                        android:id="@+id/switch_expese_incom"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:drawableLeft="@drawable/change_icon"
+                        android:drawablePadding="5dp"
+                        android:gravity="center_vertical"
+                        android:padding="@dimen/margin_left_15"
+                        android:text="切换收入情况"
+                        android:textColor="@color/context_color"
+                        android:textSize="@dimen/context_text" />
+                </RelativeLayout>
+
+                <include layout="@layout/item_split_line_margin_pesent_three" />
+
+                <com.yiqiji.money.modules.common.view.DrawSimpleLineChartView
+                    android:id="@+id/lineChartView"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/statistics_line_height"
+                    android:background="@color/white" />
+
+                <include layout="@layout/item_split_line_margin_pesent_three" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/weekdays"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/eg_weekday"
+                    android:textColor="@color/new_text_color_1"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+                <com.yiqiji.money.modules.common.view.IncomeExpenditureCircleView
+                    android:id="@+id/incomeExpenditureCircleView"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp" />
+
+                <RelativeLayout
+                    android:id="@+id/rela_expend"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_left_15"
+                    android:layout_marginRight="@dimen/margin_left_15"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp">
+
+                    <TextView
+                        android:id="@+id/costtype"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@null"
+                        android:gravity="center_vertical"
+                        android:text="支出"
+                        android:textColor="@color/context_color"
+                        android:textSize="@dimen/context_text" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/margin_left_10"
+                        android:layout_toLeftOf="@+id/tv_all_ac_main"
+                        android:contentDescription="@null"
+                        android:text=""
+                        android:textColor="@color/green"
+                        android:textSize="@dimen/context_text"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_all_ac_main"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:textColor="@color/context_color"
+                        android:textSize="@dimen/context_text" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <include layout="@layout/item_split_line_margin_pesent_three" />
+
+            <com.yiqiji.money.modules.homeModule.home.wegit.NestedExpandaleListView
+                android:id="@+id/bill_listview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawSelectorOnTop="false"
+                android:groupIndicator="@null"
+                android:visibility="visible" />
+
+            <com.yiqiji.money.modules.common.view.MyRecyclerView
+                android:id="@+id/recylerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone" />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/nodata"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/split_line"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/no_statics_data_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:src="@drawable/no_statics_data" />
+
+        <TextView
+            android:id="@+id/current_notdata"
+            style="@style/text_gray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@color/split_line"
+            android:gravity="center"
+            android:text="本月无记账数据哦" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white" />
+
+</LinearLayout>

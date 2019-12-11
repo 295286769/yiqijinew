@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <com.yiqiji.money.modules.common.view.MyTitleLayout
+        android:id="@+id/my_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/state_bar_height_25" />
+
+    <include
+        android:id="@+id/incl_view"
+        layout="@layout/item_split_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/my_title" />
+
+    <!--<ScrollView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@+id/incl_view">-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/incl_view"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/book_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/margin_left_15"
+            android:gravity="center_vertical"
+            android:paddingTop="8dp"
+            android:textColor="@color/secondary_text"
+            android:textSize="@dimen/context_text" />
+
+        <com.yiqiji.money.modules.common.widget.BaseRecylerview
+            android:id="@+id/books_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fadingEdge="none"
+            android:overScrollMode="never"
+            android:scrollbars="none" />
+
+
+        <com.yiqiji.money.modules.common.widget.MyViewGroup
+            android:id="@+id/books_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+    </LinearLayout>
+    <!--</ScrollView>-->
+
+    <include
+        android:id="@+id/include_on_login"
+        layout="@layout/unlogin_prompt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone" />
+
+</RelativeLayout>

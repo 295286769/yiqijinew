@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <!--标题-->
+    <include
+        android:id="@+id/rl_head"
+        layout="@layout/include_common_head" />
+
+    <LinearLayout
+        android:id="@+id/ll_search"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_below="@+id/rl_head"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/margin_left_15"
+        android:paddingRight="@dimen/margin_left_15">
+
+        <TextView
+            android:id="@+id/tv_brand"
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:text="基金名称"
+            android:textColor="@color/context_color"
+            android:textSize="@dimen/context_text" />
+
+        <EditText
+            android:id="@+id/et_brand"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="基金名称/代码/拼音"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:singleLine="true"
+            android:textColor="@color/context_color"
+            android:textSize="@dimen/secondary_text_size" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/v_divider"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/ll_search"
+        android:layout_marginLeft="@dimen/margin_left_15"
+        android:layout_marginRight="@dimen/margin_left_15"
+        android:background="@color/split_line" />
+
+
+    <!--输入信息布局-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/v_divider"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/margin_left_15"
+            android:paddingRight="@dimen/margin_left_15">
+
+            <TextView
+                android:id="@+id/tv_curValue"
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="当前市值"
+                android:textColor="@color/context_color"
+                android:textSize="@dimen/context_text" />
+
+            <TextView
+                android:id="@+id/tv_stock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="股"
+                android:textColor="@color/context_color"
+                android:textSize="@dimen/context_text" />
+
+            <EditText
+                android:id="@+id/et_curValue"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toLeftOf="@+id/tv_stock"
+                android:layout_toRightOf="@+id/tv_curValue"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="0.00(可选)"
+                android:inputType="number"
+                android:maxLength="12"
+                android:textColor="@color/context_color"
+                android:textSize="@dimen/secondary_text_size" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="@dimen/margin_left_15"
+            android:layout_marginRight="@dimen/margin_left_15"
+            android:background="@color/split_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/margin_left_15"
+            android:paddingRight="@dimen/margin_left_15">
+
+            <TextView
+                android:id="@+id/tv_capital"
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:text="本金"
+                android:textColor="@color/context_color"
+                android:textSize="@dimen/context_text" />
+
+            <EditText
+                android:id="@+id/et_capital"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:hint="0.00(可选)"
+                android:inputType="numberDecimal"
+                android:maxLength="12"
+                android:textColor="@color/context_color"
+                android:textSize="@dimen/secondary_text_size" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="@dimen/margin_left_15"
+            android:layout_marginRight="@dimen/margin_left_15"
+            android:background="@color/split_line" />
+
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="@dimen/margin_left_15"
+            android:layout_marginRight="@dimen/margin_left_15"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bg_selecter_littleround_blue_darkblue"
+            android:text="保存"
+            android:textColor="@color/white"
+            android:textSize="@dimen/context_text" />
+
+        <LinearLayout
+            android:id="@+id/ll_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_delet"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="@dimen/margin_left_15"
+                android:layout_marginRight="@dimen/margin_left_15"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_selecter_littleround_blue_white_darkwhite"
+                android:clickable="true"
+                android:text="删除"
+                android:textColor="@color/main_back"
+                android:textSize="@dimen/context_text" />
+
+            <Button
+                android:id="@+id/btn_etSave"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="@dimen/margin_left_15"
+                android:layout_marginRight="@dimen/margin_left_15"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_selecter_littleround_blue_darkblue"
+                android:clickable="true"
+                android:text="保存"
+                android:textColor="@color/white"
+                android:textSize="@dimen/context_text" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--搜索股票信息布局-->
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/v_divider"
+        android:background="@color/white"
+        android:divider="@null"
+        android:listSelector="@android:color/transparent"
+        android:visibility="invisible" />
+
+</RelativeLayout>

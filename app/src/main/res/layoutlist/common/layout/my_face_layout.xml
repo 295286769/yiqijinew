@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yiqiji.money.modules.common.control.FaceRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/FaceRelativeLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/rl_input"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:background="#E8E8E8">
+
+        <ImageView
+            android:id="@+id/btn_face"
+            android:layout_width="27dp"
+            android:layout_height="27dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:background="@drawable/comment_face"
+            android:scaleType="centerInside" />
+
+        <Button
+            android:id="@+id/btn_send"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/bg_selector_littleround_gray_white_gray_darkgray"
+            android:text="发送"
+            android:textColor="#666666"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/et_sendmessage"
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/btn_send"
+            android:layout_toRightOf="@id/btn_face"
+            android:background="@drawable/bg_littleround_white"
+            android:gravity="center_vertical"
+            android:hint="评论"
+            android:paddingLeft="8dp"
+            android:paddingRight="3dp"
+            android:singleLine="true"
+            android:textColor="#9F9F9F"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ll_facechoose"
+        android:layout_width="fill_parent"
+        android:layout_height="164dp"
+        android:layout_below="@id/rl_input"
+        android:background="#f6f5f5"
+        android:visibility="gone">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp_contains"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:id="@+id/iv_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="6dp"
+            android:gravity="center"
+            android:orientation="horizontal" />
+    </RelativeLayout>
+
+</com.yiqiji.money.modules.common.control.FaceRelativeLayout>

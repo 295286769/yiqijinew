@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/city_title"
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:background="#F4F4F4"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/margin_left_15"
+            android:text="常用银行"
+            android:textColor="@color/context_color"
+            android:textSize="@dimen/context_text" />
+
+        <LinearLayout
+            android:id="@+id/recommend_category_container"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="6dip"
+            android:paddingRight="6dip" />
+    </LinearLayout>
+
+
+</LinearLayout>

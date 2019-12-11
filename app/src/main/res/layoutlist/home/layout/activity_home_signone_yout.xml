@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_signOne"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:layout_margin="@dimen/margin_left_15"
+    android:background="@drawable/bg_selecter_littleround_blue_darkblue">
+
+    <TextView
+        android:id="@+id/sign_button"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:drawableLeft="@drawable/pen_icon"
+        android:drawablePadding="10dp"
+        android:gravity="center"
+        android:paddingLeft="60dp"
+        android:paddingRight="60dp"
+        android:text="记一笔"
+        android:textColor="@color/white"
+        android:textSize="19sp" />
+
+    <ImageView
+        android:id="@+id/iv_voice"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:src="@drawable/icon_white_voice" />
+
+    <View
+        android:layout_width="0.5dp"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="6dp"
+        android:layout_marginTop="6dp"
+        android:layout_toLeftOf="@+id/iv_voice"
+        android:background="@color/voice_divider_color" />
+
+</RelativeLayout>

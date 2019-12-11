@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/expend_swipeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="13dp"
+        android:paddingTop="13dp">
+
+        <com.yiqiji.money.modules.common.view.UserHeadImageView
+            android:id="@+id/iv_expend_payment"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_left_15"
+            android:src="@drawable/add" />
+
+        <TextView
+            android:id="@+id/tv_expend_name"
+            style="@style/name_maxLength"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/iv_expend_payment"
+            android:text="李亮"
+            android:textSize="@dimen/context_text" />
+
+        <TextView
+            android:id="@+id/tv_expend_money_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/tv_expend_money"
+            android:text="花费 "
+            android:textColor="@color/secondary_text"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/tv_expend_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_left_15"
+            android:text="0.00"
+            android:textSize="@dimen/secondary_text_size" />
+    </RelativeLayout>
+
+    <include layout="@layout/item_split_line_margin" />
+</LinearLayout>

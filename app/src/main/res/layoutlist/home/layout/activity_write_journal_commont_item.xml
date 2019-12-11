@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/margin_left_10"
+        android:paddingLeft="@dimen/margin_left_15"
+        android:paddingRight="@dimen/margin_left_15"
+        android:paddingTop="@dimen/margin_left_10">
+
+        <com.yiqiji.money.modules.common.view.CircleImageView
+            android:id="@+id/head_image"
+            android:layout_width="@dimen/image_head_height_30"
+            android:layout_height="@dimen/image_head_height_30"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="@dimen/margin_left_5"
+            android:src="@drawable/icon" />
+
+        <TextView
+            android:id="@+id/user_name"
+            style="@style/user_name_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_left_15"
+            android:layout_toRightOf="@+id/head_image"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="" />
+
+
+        <TextView
+            android:id="@+id/time_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/user_name"
+            android:layout_below="@+id/user_name"
+            android:layout_marginRight="5dp"
+            android:ellipsize="end"
+            android:paddingLeft="2dp"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/secondary_text"
+            android:textSize="11sp"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/content_text"
+            style="@style/text_context_12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/user_name"
+            android:layout_below="@+id/time_text"
+            android:layout_marginTop="@dimen/margin_left_5"
+            android:layout_toRightOf="@+id/head_image"
+            android:text="" />
+    </RelativeLayout>
+
+    <include layout="@layout/item_split_line" />
+</LinearLayout>

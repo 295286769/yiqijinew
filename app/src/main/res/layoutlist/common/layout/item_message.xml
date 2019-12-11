@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_selecter_white_darkwhite">
+
+    <RelativeLayout
+        android:id="@+id/item_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:id="@+id/iv_message_notice"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/margin_left_15"
+            android:src="@drawable/message" />
+
+        <ImageView
+            android:id="@+id/iv_message_red_dot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/iv_message_notice"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="3dp"
+            android:src="@drawable/red_dot" />
+
+        <TextView
+            android:id="@+id/tv_message_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_left_10"
+            android:layout_marginRight="@dimen/margin_left_15"
+            android:layout_toRightOf="@id/iv_message_notice"
+            android:text="张三加入了群组记账《旅行账本》，去看一下吧"
+            android:textColor="@color/context_color"
+            android:textSize="@dimen/context_text" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/margin_left_15"
+        android:src="@drawable/left"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/tv_message_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/item_message"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="@dimen/margin_left_10"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/iv_message"
+        android:text="" />
+
+    <include
+        layout="@layout/item_split_line_margin"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/tv_message_time"
+        android:layout_marginLeft="@dimen/margin_left_15"
+        android:layout_marginRight="@dimen/margin_left_15" />
+
+</RelativeLayout>

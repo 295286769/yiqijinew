@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/module_line"
+    android:orientation="vertical" >
+
+    <com.yiqiji.money.modules.common.view.MyTitleLayout
+        android:id="@+id/my_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:id="@+id/view_login"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_gravity="center_vertical"
+        android:background="@color/split_line" >
+    </View>
+
+    <com.yiqiji.money.modules.common.view.PullToRefreshLayout
+        android:id="@+id/refresh_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <include layout="@layout/refresh_head" />
+        <!-- 支持所有实现Pullable接口的View -->
+
+        <com.yiqiji.money.modules.common.view.MyRecyclerView
+            android:id="@+id/rv_salary"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical" />
+
+        <include layout="@layout/load_more" />
+    </com.yiqiji.money.modules.common.view.PullToRefreshLayout>
+
+</LinearLayout>

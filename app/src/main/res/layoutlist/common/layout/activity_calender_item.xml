@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/calendar_day"
+        android:text="2016年11月10日"
+        android:layout_marginLeft="@dimen/calendar_back_piddingleft"
+        android:gravity="center_vertical"
+        android:id="@+id/date"
+        android:textStyle="bold"/>
+    <View android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/background_color"
+        android:paddingLeft="@dimen/calendar_back_piddingleft"
+        android:padding="@dimen/calendar_back_piddingleft"
+        android:paddingBottom="@dimen/calendar_back_piddingleft" ></View>
+    <!--  <com.yiqiji.money.activity.calend.view.CalendarView
+          android:layout_width="match_parent"
+          android:layout_height="300dp"
+          android:id="@+id/calendarView"
+          android:layout_marginLeft="@dimen/calendar_back_piddingtop"/>-->
+
+</LinearLayout>

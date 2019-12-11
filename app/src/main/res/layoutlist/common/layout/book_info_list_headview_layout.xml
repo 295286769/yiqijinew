@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp">
+
+        <ImageView
+            android:id="@+id/image_bookCover"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/sing_icon" />
+
+
+        <LinearLayout
+            android:id="@+id/ll_linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:text="创建:"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:text=""
+                android:textColor="@color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:text="浏览量:"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/browse_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:text="11001"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:text="订阅:"
+                android:textColor="@color/white" />
+
+            <!-- <ImageView
+                 android:layout_width="16dp"
+                 android:layout_height="16dp"
+                 android:layout_marginLeft="5dp"
+                 android:layout_toLeftOf="@+id/tv_fansNum"
+                 android:src="@drawable/icon_follower" />-->
+
+            <TextView
+                android:id="@+id/tv_fansNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5121"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tv_creater"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/ll_linear"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/ll_linear"
+            android:text=""
+            android:textColor="@color/white"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_bookTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center_horizontal"
+        android:text=""
+        android:textSize="16dp" />
+
+    <LinearLayout
+        android:id="@+id/ll_bookDescribe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/ll_superclass"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="#F5F9FC"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="#F5F9FC"
+            android:gravity="center_vertical"
+            android:text="账单详情"
+            android:textSize="14dp" />
+
+        <RadioGroup
+            android:id="@+id/decoration_log_details_group"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="#F5F9FC"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <RadioButton
+                android:id="@+id/decoration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:checked="true"
+                android:text="装修清单"
+                android:textColor="@color/decoration_or_log_details_select"
+                android:textSize="@dimen/text_14" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:src="@drawable/subcrible_separate" />
+
+            <RadioButton
+                android:id="@+id/diary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:text="装修日记"
+                android:textColor="@color/decoration_or_log_details_select"
+                android:textSize="@dimen/text_14" />
+
+        </RadioGroup>
+
+        <CheckBox
+            android:id="@+id/check_sort"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="4dp"
+            android:background="@color/transparent_color"
+            android:button="@drawable/bg_sort_toggle_button"
+            android:gravity="center_vertical" />
+
+        <TextView
+            android:id="@+id/tv_sort"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="2dp"
+            android:layout_toLeftOf="@id/check_sort"
+            android:text="由远及近"
+            android:textColor="#498be7"
+            android:textSize="14dp" />
+    </RelativeLayout>
+</LinearLayout>

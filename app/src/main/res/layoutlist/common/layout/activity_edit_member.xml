@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_left_20"
+        android:background="@drawable/list_note_bagroud"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/change_memeber_title"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height_50"
+            android:gravity="center"
+            android:text="选择对张三曹锁"
+            android:textColor="@color/context_color"
+            android:textSize="@dimen/contexts_titel_text_17" />
+
+        <LinearLayout
+            android:id="@+id/layout_member"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

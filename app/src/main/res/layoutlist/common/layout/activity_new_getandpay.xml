@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <!--标题-->
+    <include layout="@layout/include_common_head" />
+
+    <RadioGroup
+        android:id="@+id/radio_group_wealth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/wealth_button_back_ground"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_get"
+            android:layout_width="80dp"
+            android:layout_height="25dp"
+            android:background="@drawable/wealth_readio_left"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:text="新建应收"
+            android:textColor="@drawable/wealth_readio_text_color" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/main_back" />
+
+        <RadioButton
+            android:id="@+id/rb_pay"
+            android:layout_width="80dp"
+            android:layout_height="25dp"
+            android:background="@drawable/wealth_readio_right"
+            android:button="@null"
+            android:gravity="center"
+            android:text="新建应付"
+            android:textColor="@drawable/wealth_readio_text_color" />
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/margin_left_15"
+        android:paddingRight="@dimen/margin_left_15">
+
+        <TextView
+            android:id="@+id/tv_getContent"
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:text="应收内容"
+            android:textColor="@color/context_color"
+            android:textSize="@dimen/context_text" />
+
+        <EditText
+            android:id="@+id/et_getContent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="请输入应收内容(必填)"
+            android:singleLine="true"
+            android:textColor="@color/context_color"
+            android:textSize="@dimen/secondary_text_size" />
+    </LinearLayout>
+
+    <include layout="@layout/item_split_line_margin" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/margin_left_15"
+        android:paddingRight="@dimen/margin_left_15">
+
+        <TextView
+            android:id="@+id/tv_getMoney"
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:text="应收金额"
+            android:textColor="@color/context_color"
+            android:textSize="@dimen/context_text" />
+
+        <EditText
+            android:id="@+id/et_getMoney"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="请输入应收内容(必填)"
+            android:singleLine="true"
+            android:textColor="@color/context_color"
+            android:textSize="@dimen/secondary_text_size" />
+    </LinearLayout>
+
+    <include layout="@layout/item_split_line_margin" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/margin_left_15"
+        android:paddingRight="@dimen/margin_left_15">
+
+        <TextView
+            android:id="@+id/tv_data"
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:text="发生日期"
+            android:textColor="@color/context_color"
+            android:textSize="@dimen/context_text" />
+
+        <TextView
+            android:id="@+id/tv_dataDetail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:textColor="@color/context_color"
+            android:textSize="@dimen/secondary_text_size" />
+    </LinearLayout>
+
+    <include layout="@layout/item_split_line_margin" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/margin_left_15"
+        android:paddingRight="@dimen/margin_left_15">
+
+        <TextView
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:text="备注"
+            android:textColor="@color/context_color"
+            android:textSize="@dimen/context_text" />
+
+        <EditText
+            android:id="@+id/et_marks"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="选填"
+            android:singleLine="true"
+            android:textColor="@color/context_color"
+            android:textSize="@dimen/secondary_text_size" />
+    </LinearLayout>
+
+    <include layout="@layout/item_split_line_margin" />
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="@dimen/margin_left_15"
+        android:layout_marginRight="@dimen/margin_left_15"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_selecter_littleround_blue_darkblue"
+        android:text="保存"
+        android:textColor="@color/white"
+        android:textSize="@dimen/context_text" />
+
+</LinearLayout>
